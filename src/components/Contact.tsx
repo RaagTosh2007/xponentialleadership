@@ -88,12 +88,11 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Build a Stronger{" "}
-            <span className="gradient-text">Organization?</span>
+            If your organization feels{" "}
+            <span className="gradient-text">stuck</span>—or stretching in too many directions—let's talk.
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Let's start with a discovery conversation. We'll explore your current challenges, 
-            clarify what's most important, and map out the right next step.
+            I'll help you cut through the noise, focus on what matters most, and build the leadership and culture you need to thrive.
           </p>
         </div>
 
@@ -101,9 +100,9 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="bg-gradient-card shadow-medium border-0">
             <CardHeader>
-              <CardTitle className="text-2xl">Send a Message</CardTitle>
+              <CardTitle className="text-2xl">Start the Conversation</CardTitle>
               <p className="text-muted-foreground">
-                Tell us about your organization's challenges and goals.
+                Tell us what's challenging your organization right now.
               </p>
             </CardHeader>
             <CardContent>

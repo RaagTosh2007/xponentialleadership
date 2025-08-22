@@ -2,26 +2,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Target, Users, TrendingUp, Award } from "lucide-react";
 
 const About = () => {
-  const values = [
+  const challenges = [
     {
       icon: Target,
-      title: "Evidence-Based",
-      description: "All solutions draw on proven OD and leadership science"
-    },
-    {
-      icon: TrendingUp,
-      title: "Practical & Sustainable",
-      description: "Designed to embed change, not just deliver quick fixes"
+      title: "Growth has slowed or plateaued",
+      description: "Your business momentum isn't what it used to be"
     },
     {
       icon: Users,
-      title: "Human-Centered",
-      description: "Focus on people as the drivers of performance and growth"
+      title: "Teams are pulling in different directions",
+      description: "Lack of alignment is creating friction and confusion"
+    },
+    {
+      icon: TrendingUp,
+      title: "Change feels exhausting, not energizing",
+      description: "Your people are tired of constant shifts and uncertainty"
     },
     {
       icon: Award,
-      title: "Adaptive & Continuous",
-      description: "Flexible support tailored to your evolving business needs"
+      title: "Leaders are stretched thin and struggling to align",
+      description: "Your leadership team needs clarity and unified direction"
     }
   ];
 
@@ -30,60 +30,49 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Stronger Organizations. Resilient Leaders.{" "}
-            <span className="gradient-text">Lasting Impact.</span>
+            You may be noticing...
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            My approach is grounded in science, human values, and practical tools—so that change 
-            is not just managed but embraced, and people remain energized and engaged.
+            When business moves faster than culture, these warning signs start showing up
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {values.map((value, index) => (
+          {challenges.map((challenge, index) => (
             <Card key={index} className="bg-gradient-card hover:shadow-medium transition-all duration-300 border-0">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="h-6 w-6 text-primary-foreground" />
+                  <challenge.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <h3 className="font-semibold mb-2">{value.title}</h3>
-                <p className="text-sm text-muted-foreground">{value.description}</p>
+                <h3 className="font-semibold mb-2 text-sm leading-tight">{challenge.title}</h3>
+                <p className="text-sm text-muted-foreground">{challenge.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-card rounded-2xl p-8 lg:p-12 shadow-soft">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="mt-16 bg-gradient-hero rounded-2xl p-8 lg:p-12 shadow-soft text-center">
+          <h3 className="text-2xl font-bold text-primary-foreground mb-6">That's where I come in.</h3>
+          <p className="text-lg text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
+            For leaders who want their people and business to <span className="gradient-text font-semibold">thrive—together</span>.
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-primary-foreground/80">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Clients choose me when:</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Growth has plateaued and fresh energy is needed</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Leadership teams need to align around vision and execution</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Culture feels fragmented and needs strengthening before scaling</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Change feels overwhelming and requires structure and guidance</span>
-                </li>
-              </ul>
+              <div className="text-sm font-medium mb-1">It's Practical</div>
+              <div className="text-xs">No jargon, just steps you can use</div>
             </div>
-            <div className="text-center lg:text-right">
-              <div className="inline-block bg-primary/10 rounded-2xl p-8">
-                <div className="text-4xl font-bold gradient-text mb-2">20+</div>
-                <div className="text-muted-foreground">Years of Experience</div>
-                <div className="text-sm text-muted-foreground mt-2">
-                  in Talent, Culture & Leadership
-                </div>
-              </div>
+            <div>
+              <div className="text-sm font-medium mb-1">It Lasts</div>
+              <div className="text-xs">Change sticks beyond the workshop</div>
+            </div>
+            <div>
+              <div className="text-sm font-medium mb-1">It's Human</div>
+              <div className="text-xs">People feel heard and included</div>
+            </div>
+            <div>
+              <div className="text-sm font-medium mb-1">It Fits You</div>
+              <div className="text-xs">Tailored to your unique challenges</div>
             </div>
           </div>
         </div>

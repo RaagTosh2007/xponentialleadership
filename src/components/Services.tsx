@@ -13,52 +13,52 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Organization Development Strategy",
-      description: "Transform your organization with science-based OD roadmaps.",
+      title: "Get Clear on What's Really Going On",
+      description: "You don't just need more data—you need insight.",
+      outcomes: "You'll walk away with:",
       features: [
-        "Diagnose organizational strengths and challenges",
-        "Design science-based OD roadmaps aligned to business goals",
-        "Facilitate structured change using the 5-step OD process"
+        "A clear picture of what's working and what's holding you back",
+        "Prioritized areas for action, not endless reports"
       ]
     },
     {
       icon: ChartBar,
-      title: "Diagnostics & Assessments",
-      description: "Understand your current state with comprehensive assessments.",
+      title: "Align Your Teams & Leadership",
+      description: "When leadership isn't aligned, the whole company feels it.",
+      outcomes: "You'll get:",
       features: [
-        "Employee engagement and culture surveys",
-        "Leadership effectiveness assessments", 
-        "Team effectiveness workshops and feedback loops"
+        "A leadership team that pulls in the same direction",
+        "Teams that collaborate with trust and accountability"
       ]
     },
     {
       icon: Settings,
-      title: "Change & Intervention Design",
-      description: "Strategic interventions that drive lasting organizational change.",
+      title: "Make Change Stick",
+      description: "Change is hard when it's done \"to\" people instead of \"with\" them.",
+      outcomes: "You'll see:",
       features: [
-        "Human process interventions (team building, conflict resolution)",
-        "Structural redesign (workflows, role clarity, agility frameworks)",
-        "Strategic change programs to future-proof the business"
+        "Less resistance, more ownership",
+        "Smoother transitions that don't derail day-to-day business"
       ]
     },
     {
       icon: Users,
-      title: "Leadership Coaching & Development",
-      description: "Develop resilient leaders who can navigate complex challenges.",
+      title: "Build Leaders Who Inspire & Deliver",
+      description: "Your managers and leaders are the key to scaling growth.",
+      outcomes: "You'll notice:",
       features: [
-        "One-on-one coaching for senior leaders",
-        "Group coaching and team offsites",
-        "Programs to build psychological safety, resilience, and innovation"
+        "Leaders who grow others, not just themselves",
+        "More innovation, less firefighting"
       ]
     },
     {
       icon: GraduationCap,
-      title: "Learning & Culture Enablement",
-      description: "Build learning cultures that adapt and thrive.",
+      title: "Strengthen Your Culture",
+      description: "A fragmented culture slows growth.",
+      outcomes: "You'll gain:",
       features: [
-        "Workshops on trust, collaboration, and adaptive leadership",
-        "Culture transformation journeys rooted in purpose and values",
-        "Creation of in-house OD capability within HR and leadership teams"
+        "Higher engagement and retention",
+        "A culture that attracts talent and drives performance"
       ]
     }
   ];
@@ -86,6 +86,7 @@ const Services = () => {
                 <p className="text-muted-foreground">{service.description}</p>
               </CardHeader>
               <CardContent>
+                <p className="text-muted-foreground text-sm mb-4">{service.outcomes}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start text-sm">

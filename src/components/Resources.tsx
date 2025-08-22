@@ -6,22 +6,22 @@ const Resources = () => {
   const resources = [
     {
       icon: FileText,
-      title: "OD Roadmap Cheat Sheet",
-      description: "The 5 essential steps to successful Organization Development",
+      title: "Quick OD Roadmap",
+      description: "See the 5 key steps to move from stuck → thriving",
       type: "Free Download",
       action: "Download Now"
     },
     {
       icon: BarChart3,
-      title: "HR & OD Metrics Toolkit",
-      description: "Eight key measures for tracking organizational health",
-      type: "Toolkit",
-      action: "Get Toolkit"
+      title: "Health Check Metrics",
+      description: "Simple indicators to know if your org is on track",
+      type: "Assessment",
+      action: "Get Assessment"
     },
     {
       icon: Dumbbell,
-      title: "OD Boot Camps",
-      description: "Immersive 6-month learning journeys to build OD muscles within your leadership team",
+      title: "Leadership & Culture Boot Camps",
+      description: "Hands-on programs to energize your leaders and teams in just 6 months",
       type: "Program",
       action: "Learn More"
     }

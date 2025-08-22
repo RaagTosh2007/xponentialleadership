@@ -14,14 +14,11 @@ const Hero = () => {
                 20+ Years of Excellence
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Helping Organizations{" "}
-                <span className="gradient-text">Thrive</span> in Times of{" "}
-                <span className="gradient-text">Change</span>
+                When your business is changing faster than your{" "}
+                <span className="gradient-text">people and culture</span> can keep up...
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-                I partner with leaders and teams to strengthen their organizations from the inside out. 
-                With proven Organization Development (OD) practices and leadership coaching, 
-                I help businesses grow sustainably.
+                I help organizations like yours strengthen leadership, align culture, and build resilience—so you can move forward with confidence, clarity, and results.
               </p>
             </div>
 
@@ -35,18 +32,22 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <div className="flex items-center justify-center lg:justify-start">
                 <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>Evidence-Based</span>
+                <span>It's Practical</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start">
                 <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>Human-Centered</span>
+                <span>It Lasts</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start">
                 <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>Sustainable Results</span>
+                <span>It's Human</span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start">
+                <CheckCircle className="h-5 w-5 text-accent mr-2" />
+                <span>It Fits You</span>
               </div>
             </div>
           </div>
