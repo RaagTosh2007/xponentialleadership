@@ -164,7 +164,7 @@ const Contact = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-gradient-primary hover:shadow-strong transition-all duration-300"
+                  className="w-full bg-gradient-accent hover:shadow-strong transition-all duration-300"
                 >
                   <Send className="w-5 h-5 mr-2" />
                   Send Message

@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-gradient-primary hover:shadow-strong transition-all duration-300">
+              <Button size="lg" className="bg-gradient-accent hover:shadow-strong transition-all duration-300">
                 Book Discovery Session
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

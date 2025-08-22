@@ -108,8 +108,7 @@ const Services = () => {
           </p>
           <Button 
             size="lg" 
-            variant="secondary"
-            className="bg-background hover:bg-background/90 text-foreground hover:shadow-strong transition-all duration-300"
+            className="bg-gradient-accent hover:shadow-strong transition-all duration-300"
           >
             Schedule Discovery Session
             <ArrowRight className="ml-2 h-5 w-5" />

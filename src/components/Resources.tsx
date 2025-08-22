@@ -71,7 +71,7 @@ const Resources = () => {
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Get exclusive access to research, case studies, and practical tips for building stronger organizations.
             </p>
-            <Button size="lg" className="bg-gradient-primary hover:shadow-strong transition-all duration-300">
+            <Button size="lg" className="bg-gradient-accent hover:shadow-strong transition-all duration-300">
               Subscribe for Insights
             </Button>
           </div>
