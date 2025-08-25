@@ -56,9 +56,10 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 scale-110"></div>
               <img
-                src={profileImage}
-                alt="Satyanarayana Kumar - Management Consultant & Executive Coach in Professional Business Suit"
-                className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover object-center shadow-strong border-4 border-background"
+                src="/lovable-uploads/67d4f259-9595-485d-a64e-e137f8e02340.png"
+                alt="Satyanarayana Kumar - Management Consultant & Executive Coach"
+                className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-full object-cover object-center shadow-strong border-4 border-background"
+                style={{ transform: 'scale(0.7)', transformOrigin: 'center' }}
               />
             </div>
           </div>
