@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/profile-image.png";
+import profileImage from "@/assets/profile-image-zoomed.png";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Hero = () => {
@@ -56,8 +56,8 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 scale-110"></div>
               <img
+                src={profileImage}
                 alt="Satyanarayana Kumar - Management Consultant & Executive Coach"
-                src="/lovable-uploads/67d4f259-9595-485d-a64e-e137f8e02340.png"
                 className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-strong border-4 border-background"
               />
             </div>
