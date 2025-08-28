@@ -30,24 +30,6 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>It's Practical</span>
-              </div>
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>It Lasts</span>
-              </div>
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>It's Human</span>
-              </div>
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircle className="h-5 w-5 text-accent mr-2" />
-                <span>It Fits You</span>
-              </div>
-            </div>
           </div>
 
           <div className="flex justify-center lg:justify-end">

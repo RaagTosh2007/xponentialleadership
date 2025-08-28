@@ -149,7 +149,7 @@ const Coaching = () => {
             size="lg" 
             className="bg-gradient-accent hover:shadow-strong transition-all duration-300"
           >
-            Schedule Coaching Consultation
+            Schedule Coaching Session
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

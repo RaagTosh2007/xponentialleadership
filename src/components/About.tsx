@@ -40,7 +40,7 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            About <span className="gradient-text">Satyanarayana Kumar</span>
+            About <span className="gradient-text">Satya Kumar</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             A seasoned organizational development expert with over two decades of experience partnering with C-suite leaders 
