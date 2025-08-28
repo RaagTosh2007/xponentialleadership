@@ -13,7 +13,7 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Get Clear on What's Really Going On",
+      title: "Get Clear on What's Really Going On (Organizational Assessment)",
       description: "You don't just need more data—you need insight.",
       outcomes: "You'll walk away with:",
       features: [
@@ -23,7 +23,7 @@ const Services = () => {
     },
     {
       icon: ChartBar,
-      title: "Align Your Teams & Leadership",
+      title: "Align Your Teams & Leadership (Leadership Alignment)",
       description: "When leadership isn't aligned, the whole company feels it.",
       outcomes: "You'll get:",
       features: [
@@ -33,7 +33,7 @@ const Services = () => {
     },
     {
       icon: Settings,
-      title: "Make Change Stick",
+      title: "Make Change Stick (Change Management)",
       description: "Change is hard when it's done \"to\" people instead of \"with\" them.",
       outcomes: "You'll see:",
       features: [
@@ -43,7 +43,7 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: "Build Leaders Who Inspire & Deliver",
+      title: "Build Leaders Who Inspire & Deliver (Leadership Development)",
       description: "Your managers and leaders are the key to scaling growth.",
       outcomes: "You'll notice:",
       features: [
@@ -53,7 +53,7 @@ const Services = () => {
     },
     {
       icon: GraduationCap,
-      title: "Strengthen Your Culture",
+      title: "Strengthen Your Culture (Culture Transformation)",
       description: "A fragmented culture slows growth.",
       outcomes: "You'll gain:",
       features: [

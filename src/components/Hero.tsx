@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <section id="home" className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -22,13 +23,10 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex justify-center lg:justify-start mb-8">
               <Button size="lg" className="bg-gradient-accent hover:shadow-strong transition-all duration-300">
                 Book Discovery Session
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="hover:shadow-medium transition-all duration-300">
-                Download Free OD Guide
               </Button>
             </div>
 
