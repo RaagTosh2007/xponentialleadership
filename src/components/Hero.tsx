@@ -18,7 +18,7 @@ const Hero = () => {
                 When your business is changing faster than your{" "}
                 <span className="gradient-text">people and culture</span> can keep up...
               </h1>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+              <p className="text-lg text-white mb-8 max-w-2xl">
                 I help organizations like yours strengthen leadership, align culture, and build resilience—so you can move forward with confidence, clarity, and results.
               </p>
             </div>
