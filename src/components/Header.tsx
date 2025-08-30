@@ -35,12 +35,6 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant="outline" className="transition-all duration-300 hover:shadow-medium">
-              Book Discovery Call
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -68,9 +62,6 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="px-3 py-2">
-                <Button className="w-full">Book Discovery Call</Button>
-              </div>
             </div>
           </div>
         )}

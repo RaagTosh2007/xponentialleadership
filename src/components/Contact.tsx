@@ -89,7 +89,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             If your organization feels{" "}
-            <span className="gradient-text">stuck</span>—or stretching in too many directions—let's talk.
+            <span className="gradient-text">stuck</span>-or stretching in too many directions-let's talk.
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             I'll help you cut through the noise, focus on what matters most, and build the leadership and culture you need to thrive.

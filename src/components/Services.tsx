@@ -14,7 +14,7 @@ const Services = () => {
     {
       icon: Target,
       title: "Get Clear on What's Really Going On (Organizational Assessment)",
-      description: "You don't just need more data—you need insight.",
+      description: "You don't just need more data-you need insight.",
       outcomes: "You'll walk away with:",
       features: [
         "A clear picture of what's working and what's holding you back",
