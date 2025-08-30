@@ -1,61 +1,12 @@
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { toast } from "@/hooks/use-toast";
+import { Card, CardContent } from "@/components/ui/card";
 import { 
   Mail, 
   Phone, 
   MapPin, 
-  Send, 
-  Clock,
   Globe
 } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Please fill in all required fields",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours."
-    });
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      message: ""
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   const contactInfo = [
     {
       icon: Mail,
@@ -96,83 +47,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="bg-gradient-card shadow-medium border-0">
-            <CardHeader>
-              <CardTitle className="text-2xl">Start the Conversation</CardTitle>
-              <p className="text-muted-foreground">
-                Tell us what's challenging your organization right now.
-              </p>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="name">Name *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="mt-1"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="email">Email *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="mt-1"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <Label htmlFor="company">Company</Label>
-                  <Input
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="mt-1"
-                    placeholder="Your organization"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="message">Message *</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    className="mt-1 min-h-[120px]"
-                    placeholder="Tell us about your challenges and what you'd like to achieve..."
-                  />
-                </div>
-
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full bg-gradient-accent hover:shadow-strong transition-all duration-300"
-                >
-                  <Send className="w-5 h-5 mr-2" />
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
-          {/* Contact Information */}
+        <div className="max-w-2xl mx-auto">
           <div className="space-y-8">
             <div className="bg-gradient-card rounded-2xl p-8 shadow-soft">
               <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
@@ -200,16 +75,6 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-            </div>
-
-            <div className="bg-gradient-hero rounded-2xl p-8 text-center shadow-strong">
-              <Clock className="w-12 h-12 text-primary-foreground mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-primary-foreground mb-2">
-                Response Time
-              </h3>
-              <p className="text-primary-foreground/80">
-                Typically within 24 hours
-              </p>
             </div>
 
             <Card className="bg-gradient-card border-0 shadow-soft">
