@@ -86,12 +86,12 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <div className="bg-gradient-hero rounded-2xl p-8 lg:p-12 text-center shadow-strong mb-16">
+          <h2 className="text-2xl font-bold text-primary-foreground mb-4">
             If your organization feels{" "}
             <span className="gradient-text">stuck</span>-or stretching in too many directions-let's talk.
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-primary-foreground/80 max-w-3xl mx-auto">
             I'll help you cut through the noise, focus on what matters most, and build the leadership and culture you need to thrive.
           </p>
         </div>
