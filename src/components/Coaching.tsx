@@ -145,13 +145,6 @@ const Coaching = () => {
             Whether you're navigating a career transition, leading transformation, or looking to enhance your executive presence, 
             let's explore how coaching can unlock your next level of impact.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-gradient-accent hover:shadow-strong transition-all duration-300"
-          >
-            Schedule Coaching Session
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </div>
     </section>
