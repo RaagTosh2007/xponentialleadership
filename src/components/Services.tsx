@@ -100,21 +100,6 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-hero rounded-2xl p-8 lg:p-12 text-center shadow-strong">
-          <h3 className="text-2xl font-bold text-primary-foreground mb-4">
-            Ready to Transform Your Organization?
-          </h3>
-          <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-            Let's start with a discovery conversation to explore your challenges and map out the right next step.
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-gradient-accent hover:shadow-strong transition-all duration-300"
-          >
-            Schedule Discovery Session
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </div>
       </div>
     </section>
   );
