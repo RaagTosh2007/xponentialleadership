@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   Target, 
   TrendingUp, 
@@ -34,7 +35,11 @@ const Coaching = () => {
       icon: Briefcase,
       title: "Breakthrough Coaching",
       description: "Overcome limiting beliefs and unlock potential",
-      details: "Transform mindsets, develop resilience, and accelerate personal and professional growth"
+      details: "Transform mindsets, develop resilience, and accelerate personal and professional growth",
+      testimonial: {
+        quote: "High impact coach to HR leaders who are overworked but less impactful, and want to rediscover joy and be more impactful.",
+        author: "Chief Diversity & Talent Officer, Fortune 500 BFSI organization"
+      }
     }
   ];
 
@@ -89,6 +94,21 @@ const Coaching = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">{area.details}</p>
+                {area.testimonial && (
+                  <Accordion type="single" collapsible className="border-t pt-4 mt-4">
+                    <AccordionItem value="testimonial" className="border-0">
+                      <AccordionTrigger className="text-sm font-semibold hover:no-underline">
+                        Client Testimonial
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                        "{area.testimonial.quote}"
+                        <div className="mt-2 text-xs font-semibold text-accent">
+                          — {area.testimonial.author}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                )}
               </CardContent>
             </Card>
           ))}
