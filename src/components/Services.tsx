@@ -7,8 +7,10 @@ import {
   Settings, 
   Users, 
   GraduationCap, 
-  ArrowRight 
+  ArrowRight,
+  Presentation
 } from "lucide-react";
+import keynoteImage from "@/assets/keynote-session.jpeg";
 
 const Services = () => {
   const services = [
@@ -65,6 +67,12 @@ const Services = () => {
         "Higher engagement and retention",
         "A culture that attracts talent and drives performance"
       ]
+    },
+    {
+      icon: Presentation,
+      title: "Key notes & Sessions",
+      description: "We deliver key note sessions on organization capability development and current topics that are top of mind for companies.",
+      image: keynoteImage
     }
   ];
 
@@ -91,15 +99,26 @@ const Services = () => {
                 <p className="text-muted-foreground">{service.description}</p>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-sm mb-4">{service.outcomes}</p>
-                <ul className="space-y-2 mb-4">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start text-sm">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                {service.outcomes && <p className="text-muted-foreground text-sm mb-4">{service.outcomes}</p>}
+                {service.features && (
+                  <ul className="space-y-2 mb-4">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start text-sm">
+                        <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {service.image && (
+                  <div className="mt-4">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full rounded-lg object-cover"
+                    />
+                  </div>
+                )}
                 {service.caseStudy && (
                   <Accordion type="single" collapsible className="border-t pt-4">
                     <AccordionItem value="case-study" className="border-0">
