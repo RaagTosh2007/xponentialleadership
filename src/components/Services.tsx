@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   Target, 
   ChartBar, 
@@ -39,7 +40,11 @@ const Services = () => {
       features: [
         "Less resistance, more ownership",
         "Smoother transitions that don't derail day-to-day business"
-      ]
+      ],
+      caseStudy: {
+        title: "Financial Services Integration",
+        content: "A leading financial services organization successfully navigated a critical operational integration driven by a global financial crisis, consolidating two distinct business divisions into a single branch per location. This strategic move required thoughtful organizational redesign, including role reallocation and revamped rewards systems, orchestrated collaboratively by HR and business leadership to ensure alignment with the new operating model.\n\nTo facilitate a smooth transition at scale, the Learning & Development team conducted highly engaging regional workshops for over 100 participants at a time, leveraging the proven change framework from John Kotter's Our Iceberg Is Melting. These sessions enabled employees to honor past practices, confront the need for change, manage transitional emotions, and commit to actionable steps toward the unified approach.\n\nThe integrated change management strategy yielded measurable improvements: accelerated business turnaround, reduced attrition, enhanced employee engagement, and a seamless adoption of the new operational model. This case demonstrates how combining strategic HR design with immersive, large-scale change interventions can deliver resilient and sustainable business transformation.\n\nClients seeking to drive complex organizational change with confidence and impact are encouraged to leverage this proven blend of structure, empathy, and action planning."
+      }
     },
     {
       icon: Users,
@@ -87,7 +92,7 @@ const Services = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-4">{service.outcomes}</p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-4">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start text-sm">
                       <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -95,6 +100,18 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+                {service.caseStudy && (
+                  <Accordion type="single" collapsible className="border-t pt-4">
+                    <AccordionItem value="case-study" className="border-0">
+                      <AccordionTrigger className="text-sm font-semibold hover:no-underline">
+                        Case Study: {service.caseStudy.title}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                        {service.caseStudy.content}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                )}
               </CardContent>
             </Card>
           ))}
