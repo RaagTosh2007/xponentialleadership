@@ -60,7 +60,11 @@ const Services = () => {
       features: [
         "Leaders who grow others, not just themselves",
         "More innovation, less firefighting"
-      ]
+      ],
+      testimonial: {
+        quote: "Outstanding development program that was a win-win encompassing team bonding along with learning, peer coaching, experiential/action learning activities.",
+        author: "Senior Director, Consulting, Fortune 50 Technology company"
+      }
     },
     {
       icon: GraduationCap,
