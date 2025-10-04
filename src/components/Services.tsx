@@ -80,7 +80,10 @@ const Services = () => {
       icon: Presentation,
       title: "Key notes & Sessions",
       description: "We deliver key note sessions on organization capability development and current topics that are top of mind for companies.",
-      image: keynoteImage
+      testimonial: {
+        isImage: true,
+        image: keynoteImage
+      }
     }
   ];
 
@@ -118,26 +121,27 @@ const Services = () => {
                     ))}
                   </ul>
                 )}
-                {service.image && (
-                  <div className="mt-4">
-                    <img 
-                      src={service.image} 
-                      alt={service.title} 
-                      className="w-full rounded-lg object-cover"
-                    />
-                  </div>
-                )}
                 {service.testimonial && (
                   <Accordion type="single" collapsible className="border-t pt-4 mt-4">
                     <AccordionItem value="testimonial" className="border-0">
                       <AccordionTrigger className="text-sm font-semibold hover:no-underline">
-                        Client Testimonial
+                        {service.testimonial.isImage ? "Testimonials" : "Client Testimonial"}
                       </AccordionTrigger>
                       <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
-                        "{service.testimonial.quote}"
-                        <div className="mt-2 text-xs font-semibold text-accent">
-                          — {service.testimonial.author}
-                        </div>
+                        {service.testimonial.isImage ? (
+                          <img 
+                            src={service.testimonial.image} 
+                            alt="Testimonial" 
+                            className="w-full rounded-lg object-cover"
+                          />
+                        ) : (
+                          <>
+                            "{service.testimonial.quote}"
+                            <div className="mt-2 text-xs font-semibold text-accent">
+                              — {service.testimonial.author}
+                            </div>
+                          </>
+                        )}
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
