@@ -22,7 +22,11 @@ const Services = () => {
       features: [
         "A clear picture of what's working and what's holding you back",
         "Prioritized areas for action, not endless reports"
-      ]
+      ],
+      testimonial: {
+        quote: "A great development consultant to work with. Absolutely thorough in his analysis of the business need and quite precise in pinning down specific challenges learners faced and potential roadblocks.",
+        author: "AVP - Organisational Development, GCC of a European Banking firm"
+      }
     },
     {
       icon: ChartBar,
@@ -118,6 +122,21 @@ const Services = () => {
                       className="w-full rounded-lg object-cover"
                     />
                   </div>
+                )}
+                {service.testimonial && (
+                  <Accordion type="single" collapsible className="border-t pt-4 mt-4">
+                    <AccordionItem value="testimonial" className="border-0">
+                      <AccordionTrigger className="text-sm font-semibold hover:no-underline">
+                        Client Testimonial
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                        "{service.testimonial.quote}"
+                        <div className="mt-2 text-xs font-semibold text-accent">
+                          — {service.testimonial.author}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
                 )}
                 {service.caseStudy && (
                   <Accordion type="single" collapsible className="border-t pt-4">
