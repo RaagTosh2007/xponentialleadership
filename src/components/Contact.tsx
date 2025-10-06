@@ -5,6 +5,8 @@ import {
   MapPin, 
   Globe
 } from "lucide-react";
+import officeView from "@/assets/office-view.jpg";
+import officeEntrance from "@/assets/office-entrance.jpg";
 
 const Contact = () => {
   const contactInfo = [
@@ -77,6 +79,23 @@ const Contact = () => {
                 </p>
               </CardContent>
             </Card>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <div className="rounded-xl overflow-hidden shadow-soft">
+                <img 
+                  src={officeView} 
+                  alt="Office interior workspace"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-soft">
+                <img 
+                  src={officeEntrance} 
+                  alt="Office entrance with garden"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
