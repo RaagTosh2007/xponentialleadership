@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Mail, Phone, MapPin, Linkedin, ArrowUp } from "lucide-react";
+import xlLogo from "@/assets/xl-logo.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Xponential Leadership</h3>
+            <img src={xlLogo} alt="Xponential Leadership" className="h-12 w-auto mb-4 bg-white rounded-md p-2" />
             <p className="text-primary-foreground/80 mb-6 max-w-md">
               Stronger Organizations. Resilient Leaders. Lasting Impact.
             </p>
