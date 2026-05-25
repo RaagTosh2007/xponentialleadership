@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import xlLogo from "@/assets/xl-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +17,9 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 glass-effect">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold gradient-text">Xponential Leadership</h1>
-          </div>
+          <a href="#home" className="flex-shrink-0 flex items-center">
+            <img src={xlLogo} alt="Xponential Leadership" className="h-10 w-auto" />
+          </a>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
