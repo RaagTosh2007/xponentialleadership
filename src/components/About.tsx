@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Globe, Users, Award, GraduationCap, Languages } from "lucide-react";
+import { Building2, Globe, Users, Award, GraduationCap, Languages, UserCircle2, Mail } from "lucide-react";
 
 const About = () => {
   const highlights = [
@@ -111,6 +111,45 @@ const About = () => {
                   <h4 className="font-semibold text-accent">Languages</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">English, Hindi, Telugu, Tamil</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="mt-12">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              Meet Our <span className="gradient-text">Co-Founder</span>
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Partnering with Satya to lead Xponential Leadership across India and the UK.
+            </p>
+          </div>
+
+          <Card className="bg-gradient-card border-0 max-w-4xl mx-auto">
+            <CardContent className="p-8">
+              <div className="flex flex-col md:flex-row md:items-start gap-6">
+                <div className="flex-shrink-0 mx-auto md:mx-0">
+                  <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center">
+                    <UserCircle2 className="h-14 w-14 text-primary-foreground" />
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h4 className="text-xl font-bold mb-1">Harini Papanna</h4>
+                  <p className="text-accent font-medium mb-4">Co-Founder, Xponential Leadership</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    Harini co-founded Xponential Leadership with a vision to help organizations move
+                    beyond linear growth. She partners with leaders and businesses across India and the
+                    UK on leadership development, organizational capability, and culture — bringing a
+                    practical, outcomes-first approach to every engagement.
+                  </p>
+                  <div className="flex items-center justify-center md:justify-start text-sm">
+                    <Mail className="h-4 w-4 text-accent mr-2" />
+                    <a href="mailto:harini@xponentiallead.com" className="text-muted-foreground hover:text-accent transition-colors">
+                      harini@xponentiallead.com
+                    </a>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
