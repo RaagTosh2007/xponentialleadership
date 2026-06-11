@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Globe, Users, Award, GraduationCap, Languages } from "lucide-react";
+import { Building2, Globe, Users, Award, GraduationCap, Languages, UserCircle2, Mail } from "lucide-react";
 
 const About = () => {
   const highlights = [
