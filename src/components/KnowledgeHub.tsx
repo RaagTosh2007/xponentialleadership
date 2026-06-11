@@ -13,15 +13,15 @@ const KnowledgeHub = () => {
 
         <div className="flex justify-center">
           <div className="w-full max-w-[504px] rounded-lg overflow-hidden shadow-medium bg-background">
-            <iframe
-              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7470757904627695616"
-              height="613"
-              width="504"
-              frameBorder="0"
-              allowFullScreen
-              title="Embedded post"
-              className="w-full"
-            />
+            <div className="relative w-full" style={{ paddingBottom: `${(613 / 504) * 100}%` }}>
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7470757904627695616"
+                frameBorder="0"
+                allowFullScreen
+                title="Embedded post"
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
           </div>
         </div>
       </div>
