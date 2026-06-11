@@ -136,13 +136,27 @@ const About = () => {
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <h4 className="text-xl font-bold mb-1">Harini Papanna</h4>
-                  <p className="text-accent font-medium mb-4">Co-Founder, Xponential Leadership</p>
+                  <p className="text-accent font-medium mb-1">Managing Partner & Co-Founder, Xponential Leadership</p>
+                  <p className="text-muted-foreground text-xs mb-4">Bengaluru, India</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Harini co-founded Xponential Leadership with a vision to help organizations move
-                    beyond linear growth. She partners with leaders and businesses across India and the
-                    UK on leadership development, organizational capability, and culture — bringing a
-                    practical, outcomes-first approach to every engagement.
+                    Harini is a seasoned Principal Architect and Senior Integration Architect with a
+                    proven track record of building high-performing teams and delivering innovative
+                    enterprise solutions. Her expertise spans IT strategy and architecture, application
+                    modernization, API management, and AI transformation and data analytics.
                   </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    As Co-Founder of Xponential Leadership, she brings deep technology and
+                    transformation acumen to the firm — partnering with leaders across India and the UK
+                    to unlock exponential growth through the intersection of people, capability, and
+                    modern technology.
+                  </p>
+                  <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
+                    {["IT Strategy & Architecture", "Modernization", "API Management", "AI & Data Analytics"].map((tag) => (
+                      <span key={tag} className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                   <div className="flex items-center justify-center md:justify-start text-sm">
                     <Mail className="h-4 w-4 text-accent mr-2" />
                     <a href="mailto:harini@xponentiallead.com" className="text-muted-foreground hover:text-accent transition-colors">
