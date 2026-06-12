@@ -47,14 +47,26 @@ const About = () => {
   return (
     <section id="about" className="py-16 lg:py-24 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            About <span className="gradient-text">Satya Kumar</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A seasoned organizational development expert with over two decades of experience partnering with C-suite leaders 
-            to drive performance, talent development, and culture transformation across global organizations.
-          </p>
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-4xl mx-auto mb-16">
+          <div className="flex-shrink-0">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
+              <img
+                src="/lovable-uploads/2f57c10c-6b93-4dd0-bb17-d8a4b8bb8050.png"
+                alt="Satyanarayana Kumar - Management Consultant & Executive Coach"
+                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-center shadow-strong border-4 border-background"
+              />
+            </div>
+          </div>
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              About <span className="gradient-text">Satya Kumar</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              A seasoned organizational development expert with over two decades of experience partnering with C-suite leaders
+              to drive performance, talent development, and culture transformation across global organizations.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
