@@ -26,7 +26,15 @@ const About = () => {
     }
   ];
 
-  const companies = ["TATAs", "Swiss Re", "Oracle", "Fullerton", "Polaris Management Services"];
+  const companies = [
+    { name: "Xponential Leadership", domain: "xponentiallead.com" },
+    { name: "Tatas", domain: "tata.com" },
+    { name: "Swiss Re", domain: "swissre.com" },
+    { name: "Oracle", domain: "oracle.com" },
+    { name: "Fullerton India", domain: "fullertonindia.com" },
+    { name: "Polaris Management Services", domain: "polarisgroup.in" },
+    { name: "United Telecoms", domain: "utlnet.com" },
+  ];
   
   const certifications = [
     "MBA - HR & Marketing, IPE",
@@ -72,12 +80,20 @@ const About = () => {
               </div>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-accent mb-2">Key Organizations</h4>
-                  <div className="grid grid-cols-2 gap-2">
-                    {companies.map((company, index) => (
-                      <div key={index} className="flex items-center text-sm">
-                        <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                        <span>{company}</span>
+                  <h4 className="font-semibold text-accent mb-3">Key Organizations</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {companies.map((company) => (
+                      <div
+                        key={company.name}
+                        className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-background/40 border border-border/50"
+                      >
+                        <img
+                          src={`https://logo.clearbit.com/${company.domain}`}
+                          alt={`${company.name} logo`}
+                          className="h-5 w-5 object-contain bg-white rounded-sm p-0.5"
+                          loading="lazy"
+                        />
+                        <span className="text-xs text-muted-foreground">{company.name}</span>
                       </div>
                     ))}
                   </div>
