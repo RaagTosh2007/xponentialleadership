@@ -157,6 +157,43 @@ const About = () => {
                       </span>
                     ))}
                   </div>
+                  <div className="grid sm:grid-cols-2 gap-6 mb-6 text-left">
+                    <div>
+                      <div className="flex items-center mb-3">
+                        <Award className="h-4 w-4 text-accent mr-2" />
+                        <h5 className="font-semibold text-accent text-sm">Licenses & Certifications</h5>
+                      </div>
+                      <ul className="space-y-2">
+                        {[
+                          "Capgemini Certified Senior Architect L2",
+                          "Mulesoft Certified Platform Architect",
+                          "Certified SAFe 5 Agilist",
+                          "Professional Scrum Master",
+                        ].map((cert) => (
+                          <li key={cert} className="flex items-start text-xs text-muted-foreground">
+                            <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                            <span>{cert}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center mb-3">
+                        <GraduationCap className="h-4 w-4 text-accent mr-2" />
+                        <h5 className="font-semibold text-accent text-sm">Education</h5>
+                      </div>
+                      <ul className="space-y-3">
+                        <li className="text-xs text-muted-foreground">
+                          <div className="font-medium text-foreground">Indian Institute of Management Bangalore</div>
+                          <div>Management Program for Women Entrepreneurs, Entrepreneurship/Entrepreneurial Studies — 2012</div>
+                        </li>
+                        <li className="text-xs text-muted-foreground">
+                          <div className="font-medium text-foreground">Visvesvaraya Technological University</div>
+                          <div>Bachelor of Engineering, Computer Science — 2001–2005</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   <div className="flex items-center justify-center md:justify-start text-sm">
                     <Mail className="h-4 w-4 text-accent mr-2" />
                     <a href="mailto:harini@xponentiallead.com" className="text-muted-foreground hover:text-accent transition-colors">
