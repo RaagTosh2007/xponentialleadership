@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Globe, Users, Award, GraduationCap, Languages, UserCircle2, Mail } from "lucide-react";
+import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail } from "lucide-react";
+import hariniPhoto from "@/assets/harini-papanna.png.asset.json";
 
 const About = () => {
   const highlights = [
@@ -130,9 +131,12 @@ const About = () => {
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0 mx-auto md:mx-0">
-                  <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <UserCircle2 className="h-14 w-14 text-primary-foreground" />
-                  </div>
+                  <img
+                    src={hariniPhoto.url}
+                    alt="Harini Papanna, Co-Founder of Xponential Leadership"
+                    className="w-28 h-28 rounded-full object-cover ring-2 ring-accent/30 shadow-medium"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <h4 className="text-xl font-bold mb-1">Harini Papanna</h4>
