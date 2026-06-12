@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail } from "lucide-react";
+import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
 import hariniPhoto from "@/assets/harini-papanna.png.asset.json";
 
 const About = () => {
@@ -198,10 +198,51 @@ const About = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center md:justify-start text-sm">
-                    <Mail className="h-4 w-4 text-accent mr-2" />
-                    <a href="mailto:harini@xponentiallead.com" className="text-muted-foreground hover:text-accent transition-colors">
+                  <div className="mb-6 text-left">
+                    <div className="flex items-center mb-3">
+                      <Briefcase className="h-4 w-4 text-accent mr-2" />
+                      <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        { name: "Infosys", domain: "infosys.com" },
+                        { name: "HP", domain: "hp.com" },
+                        { name: "Amadeus", domain: "amadeus.com" },
+                        { name: "ITC Infotech", domain: "itcinfotech.com" },
+                        { name: "Vodafone UK", domain: "vodafone.co.uk" },
+                        { name: "Capgemini UK", domain: "capgemini.com" },
+                      ].map((co) => (
+                        <div
+                          key={co.name}
+                          className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-background/40 border border-border/50"
+                        >
+                          <img
+                            src={`https://logo.clearbit.com/${co.domain}`}
+                            alt={`${co.name} logo`}
+                            className="h-5 w-5 object-contain bg-white rounded-sm p-0.5"
+                            loading="lazy"
+                          />
+                          <span className="text-xs text-muted-foreground">{co.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 text-sm">
+                    <a
+                      href="mailto:harini@xponentiallead.com"
+                      className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <Mail className="h-4 w-4 text-accent mr-2" />
                       harini@xponentiallead.com
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/harinipapanna/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <Linkedin className="h-4 w-4 text-accent mr-2" />
+                      LinkedIn Profile
                     </a>
                   </div>
                 </div>
