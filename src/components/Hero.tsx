@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import xlLogo from "@/assets/xl-logo.png";
 
 const Hero = () => {
   return (
@@ -8,14 +7,6 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="relative flex justify-center mb-8 animate-fade-in">
-            <div className="absolute inset-0 bg-gradient-primary blur-3xl opacity-30 scale-75"></div>
-            <img
-              src={xlLogo}
-              alt="Xponential Leadership"
-              className="relative h-32 md:h-44 lg:h-52 w-auto drop-shadow-[0_8px_30px_rgba(212,175,55,0.35)]"
-            />
-          </div>
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent-foreground rounded-full text-sm font-medium mb-6">
             20+ Years of Excellence
           </span>
