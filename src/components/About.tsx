@@ -121,7 +121,7 @@ const About = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold">Satya Kumar</h3>
-                <p className="text-accent font-medium text-sm">Founder & Managing Partner, Xponential Leadership</p>
+                <p className="text-accent font-medium text-sm">Founder & Head — People, Organization & Culture</p>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-6">
@@ -189,7 +189,7 @@ const About = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold">Harini Papanna</h3>
-                <p className="text-accent font-medium text-sm">Managing Partner & Co-Founder, Xponential Leadership</p>
+                <p className="text-accent font-medium text-sm">Co-Founder, Managing Partner & Head — Technology & Women Leadership</p>
                 <p className="text-muted-foreground text-xs mt-1">Bengaluru, India</p>
               </div>
 
