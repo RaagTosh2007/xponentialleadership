@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
 import hariniPhoto from "@/assets/harini-papanna.png.asset.json";
+import satyaPhoto from "@/assets/satya-kumar.png.asset.json";
+import workshopPhoto from "@/assets/workshop.png.asset.json";
 
 const About = () => {
   const highlights = [
@@ -112,8 +114,7 @@ const About = () => {
             {
               name: "Satya Kumar",
               title: "Founder & Head — People, Organization & Culture",
-              location: "Hyderabad, India",
-              image: "/lovable-uploads/2f57c10c-6b93-4dd0-bb17-d8a4b8bb8050.png",
+              image: satyaPhoto.url,
               alt: "Satyanarayana Kumar - Management Consultant & Executive Coach",
               bio: "A seasoned organizational development expert with over two decades of experience partnering with C-suite leaders to drive performance, talent development, and culture transformation across global organizations.",
               tags: ["Leadership Coaching", "Talent & OD", "Culture Transformation", "C-Suite Advisory"],
@@ -127,7 +128,6 @@ const About = () => {
             {
               name: "Harini Papanna",
               title: "Co-Founder, Managing Partner & Head — Technology & Women Leadership",
-              location: "Bengaluru, India",
               image: hariniPhoto.url,
               alt: "Harini Papanna, Co-Founder of Xponential Leadership",
               bio: "A seasoned Principal Architect and Senior Integration Architect with a proven track record of building high-performing teams and delivering innovative enterprise solutions across IT strategy, modernization, API management, and AI transformation.",
@@ -154,7 +154,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-bold">{founder.name}</h3>
                   <p className="text-accent font-medium text-sm mt-1 min-h-[2.5rem]">{founder.title}</p>
-                  <p className="text-muted-foreground text-xs mt-1">{founder.location}</p>
+                  
                 </div>
 
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-center">
@@ -253,6 +253,24 @@ const About = () => {
             <div>
               <div className="font-medium mb-1">Results Focused</div>
               <div className="text-xs">Clear link to business priorities</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="relative rounded-2xl overflow-hidden shadow-strong group">
+            <img
+              src={workshopPhoto.url}
+              alt="Satya Kumar facilitating a leadership workshop"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+              <p className="text-accent text-xs uppercase tracking-widest mb-2">In the Room</p>
+              <h3 className="text-xl lg:text-2xl font-bold text-foreground">
+                Facilitating leaders where transformation happens
+              </h3>
             </div>
           </div>
         </div>
