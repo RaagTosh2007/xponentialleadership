@@ -256,6 +256,24 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className="mt-12">
+          <div className="relative rounded-2xl overflow-hidden shadow-strong group">
+            <img
+              src={workshopPhoto.url}
+              alt="Satya Kumar facilitating a leadership workshop"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+              <p className="text-accent text-xs uppercase tracking-widest mb-2">In the Room</p>
+              <h3 className="text-xl lg:text-2xl font-bold text-foreground">
+                Facilitating leaders where transformation happens
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
