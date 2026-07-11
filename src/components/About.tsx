@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
 import hariniPhoto from "@/assets/harini-papanna.png.asset.json";
+import satyaPhoto from "@/assets/satya-kumar.png.asset.json";
+import workshopPhoto from "@/assets/workshop.png.asset.json";
 
 const About = () => {
   const highlights = [
@@ -112,8 +114,7 @@ const About = () => {
             {
               name: "Satya Kumar",
               title: "Founder & Head — People, Organization & Culture",
-              location: "Hyderabad, India",
-              image: "/lovable-uploads/2f57c10c-6b93-4dd0-bb17-d8a4b8bb8050.png",
+              image: satyaPhoto.url,
               alt: "Satyanarayana Kumar - Management Consultant & Executive Coach",
               bio: "A seasoned organizational development expert with over two decades of experience partnering with C-suite leaders to drive performance, talent development, and culture transformation across global organizations.",
               tags: ["Leadership Coaching", "Talent & OD", "Culture Transformation", "C-Suite Advisory"],
@@ -127,7 +128,6 @@ const About = () => {
             {
               name: "Harini Papanna",
               title: "Co-Founder, Managing Partner & Head — Technology & Women Leadership",
-              location: "Bengaluru, India",
               image: hariniPhoto.url,
               alt: "Harini Papanna, Co-Founder of Xponential Leadership",
               bio: "A seasoned Principal Architect and Senior Integration Architect with a proven track record of building high-performing teams and delivering innovative enterprise solutions across IT strategy, modernization, API management, and AI transformation.",
