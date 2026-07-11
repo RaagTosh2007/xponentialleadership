@@ -154,7 +154,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-bold">{founder.name}</h3>
                   <p className="text-accent font-medium text-sm mt-1 min-h-[2.5rem]">{founder.title}</p>
-                  <p className="text-muted-foreground text-xs mt-1">{founder.location}</p>
+                  
                 </div>
 
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-center">
