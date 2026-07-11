@@ -257,12 +257,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-12">
-          <div className="relative rounded-2xl overflow-hidden shadow-strong group">
+        <div className="mt-12 max-w-4xl mx-auto">
+          <div className="relative rounded-2xl overflow-hidden shadow-strong group aspect-video">
             <img
               src={workshopPhoto.url}
               alt="Satya Kumar facilitating a leadership workshop"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
