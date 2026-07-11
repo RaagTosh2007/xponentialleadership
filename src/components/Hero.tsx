@@ -15,7 +15,7 @@ const Hero = () => {
             <span className="gradient-text">people and culture</span> can keep up...
           </h1>
           <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
-            I help organizations like yours strengthen leadership, align culture, and build resilience-so you can move forward with confidence, clarity, and results.
+            We help organizations like yours strengthen leadership, align culture, and build resilience-so you can move forward with confidence, clarity, and results.
           </p>
         </div>
       </div>
