@@ -92,11 +92,12 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Services & <span className="gradient-text">Offerings</span>
+            Leadership Development & <span className="gradient-text">Organization Development</span> Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive organization development solutions tailored to your business needs
+            Executive coaching services paired with leadership development, culture transformation, and change management — tailored to your business priorities.
           </p>
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
