@@ -8,15 +8,16 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent-foreground rounded-full text-sm font-medium mb-6">
-            20+ Years of Excellence
+            ICF-Certified · 20+ Years of Executive Coaching
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            When your business is changing faster than your{" "}
-            <span className="gradient-text">people and culture</span> can keep up...
+            Executive Coaching Services That Grow{" "}
+            <span className="gradient-text">Leaders, Culture & Results</span>
           </h1>
           <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
-            We help organizations like yours strengthen leadership, align culture, and build resilience-so you can move forward with confidence, clarity, and results.
+            Leadership coaching, CEO coaching, and organization development for companies scaling faster than their people and culture can keep up — so you move forward with clarity, confidence, and measurable results.
           </p>
+
         </div>
       </div>
     </section>
