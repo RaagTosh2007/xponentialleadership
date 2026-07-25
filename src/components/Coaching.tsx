@@ -74,12 +74,12 @@ const Coaching = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Executive Coaching <span className="gradient-text">Services</span> for CEOs & Senior Leaders
+            Executive <span className="gradient-text">Coaching</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            ICF-certified executive and leadership coaching for CEOs, senior executives, women leaders, and high-potential talent — enhance executive presence, navigate transitions, and accelerate professional growth.
+            One-on-one coaching for leaders who want to enhance their impact, navigate complex challenges, 
+            and accelerate their professional growth with clarity and confidence.
           </p>
-
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">

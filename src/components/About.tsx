@@ -1,8 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
 import hariniPhoto from "@/assets/harini-papanna.png.asset.json";
-import satyaPhoto from "@/assets/satya-kumar.png.asset.json";
-import workshopPhoto from "@/assets/workshop.png.asset.json";
 
 const About = () => {
   const highlights = [
@@ -65,16 +63,21 @@ const About = () => {
   const CompanyChips = ({ items }: { items: { name: string; domain: string }[] }) => (
     <div className="flex flex-wrap gap-2">
       {items.map((co) => (
-        <span
+        <div
           key={co.name}
-          className="text-xs px-3 py-1.5 rounded-md bg-background/40 border border-border/50 text-muted-foreground"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-background/40 border border-border/50"
         >
-          {co.name}
-        </span>
+          <img
+            src={`https://logo.clearbit.com/${co.domain}`}
+            alt={`${co.name} logo`}
+            className="h-5 w-5 object-contain bg-white rounded-sm p-0.5"
+            loading="lazy"
+          />
+          <span className="text-xs text-muted-foreground">{co.name}</span>
+        </div>
       ))}
     </div>
   );
-
 
   return (
     <section id="about" className="py-16 lg:py-24 bg-secondary/30">
@@ -105,127 +108,168 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
-          {[
-            {
-              name: "Satya Kumar",
-              title: "Founder & Head — People, Organization & Culture",
-              image: satyaPhoto.url,
-              alt: "Satyanarayana Kumar - Management Consultant & Executive Coach",
-              bio: "A seasoned organizational development expert with over two decades of experience partnering with C-suite leaders to drive performance, talent development, and culture transformation across global organizations.",
-              tags: ["Leadership Coaching", "Talent & OD", "Culture Transformation", "C-Suite Advisory"],
-              companies: satyaCompanies,
-              credentials: satyaCertifications,
-              industries: "Telecom, BFSI, IT, Automotive, Energy, Consulting, Manufacturing, Pharmaceuticals",
-              languages: "English, Hindi, Telugu, Tamil",
-              email: "satya@xponentiallead.com",
-              linkedin: "https://www.linkedin.com/in/satyanarayanankumar",
-            },
-            {
-              name: "Harini Papanna",
-              title: "Co-Founder, Managing Partner & Head — Technology & Women Leadership",
-              image: hariniPhoto.url,
-              alt: "Harini Papanna, Co-Founder of Xponential Leadership",
-              bio: "A seasoned Principal Architect and Senior Integration Architect with a proven track record of building high-performing teams and delivering innovative enterprise solutions across IT strategy, modernization, API management, and AI transformation.",
-              tags: ["IT Strategy & Architecture", "Modernization", "API Management", "AI & Data Analytics"],
-              companies: hariniCompanies,
-              credentials: hariniCertifications,
-              industries: "Technology, Telecom, Travel, Consumer Goods, Consulting",
-              languages: "English, Hindi, Kannada, Tamil",
-              email: "harini@xponentiallead.com",
-              linkedin: "https://www.linkedin.com/in/harinipapanna/",
-            },
-          ].map((founder) => (
-            <Card key={founder.name} className="bg-gradient-card border-0 h-full">
-              <CardContent className="p-8 flex flex-col h-full">
-                <div className="flex flex-col items-center text-center mb-6">
-                  <div className="relative mb-4">
-                    <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
-                    <img
-                      src={founder.image}
-                      alt={founder.alt}
-                      className="relative w-32 h-32 rounded-full object-cover object-center shadow-strong border-4 border-background ring-2 ring-accent/30"
-                      loading="lazy"
-                    />
+          {/* Satya Card */}
+          <Card className="bg-gradient-card border-0 h-full">
+            <CardContent className="p-8 flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="relative mb-4">
+                  <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
+                  <img
+                    src="/lovable-uploads/2f57c10c-6b93-4dd0-bb17-d8a4b8bb8050.png"
+                    alt="Satyanarayana Kumar - Management Consultant & Executive Coach"
+                    className="relative w-32 h-32 rounded-full object-cover object-center shadow-strong border-4 border-background ring-2 ring-accent/30"
+                  />
+                </div>
+                <h3 className="text-xl font-bold">Satya Kumar</h3>
+                <p className="text-accent font-medium text-sm">Founder & Head — People, Organization & Culture</p>
+              </div>
+
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                A seasoned organizational development expert with over two decades of
+                experience partnering with C-suite leaders to drive performance, talent
+                development, and culture transformation across global organizations.
+              </p>
+
+              <div className="space-y-6 flex-1">
+                <div>
+                  <div className="flex items-center mb-3">
+                    <Briefcase className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
                   </div>
-                  <h3 className="text-xl font-bold">{founder.name}</h3>
-                  <p className="text-accent font-medium text-sm mt-1 min-h-[2.5rem]">{founder.title}</p>
-                  
+                  <CompanyChips items={satyaCompanies} />
                 </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-center">
-                  {founder.bio}
-                </p>
-
-                <div className="flex flex-wrap justify-center gap-2 mb-6">
-                  {founder.tags.map((tag) => (
-                    <span key={tag} className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
-                      {tag}
-                    </span>
-                  ))}
+                <div>
+                  <div className="flex items-center mb-3">
+                    <Award className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Education & Certifications</h5>
+                  </div>
+                  <ul className="space-y-2">
+                    {satyaCertifications.map((cert) => (
+                      <li key={cert} className="flex items-start text-xs text-muted-foreground">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                        <span>{cert}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="space-y-6 flex-1">
-                  <div>
-                    <div className="flex items-center mb-3">
-                      <Briefcase className="h-4 w-4 text-accent mr-2" />
-                      <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
-                    </div>
-                    <CompanyChips items={founder.companies} />
+                <div>
+                  <div className="flex items-center mb-2">
+                    <Building2 className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Industry Focus</h5>
                   </div>
-
-                  <div>
-                    <div className="flex items-center mb-3">
-                      <GraduationCap className="h-4 w-4 text-accent mr-2" />
-                      <h5 className="font-semibold text-accent text-sm">Education & Certifications</h5>
-                    </div>
-                    <ul className="space-y-2">
-                      {founder.credentials.map((cert) => (
-                        <li key={cert} className="flex items-start text-xs text-muted-foreground">
-                          <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
-                          <span>{cert}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div>
-                    <div className="flex items-center mb-2">
-                      <Building2 className="h-4 w-4 text-accent mr-2" />
-                      <h5 className="font-semibold text-accent text-sm">Industry Focus</h5>
-                    </div>
-                    <p className="text-xs text-muted-foreground">{founder.industries}</p>
-                  </div>
-
-                  <div>
-                    <div className="flex items-center mb-2">
-                      <Languages className="h-4 w-4 text-accent mr-2" />
-                      <h5 className="font-semibold text-accent text-sm">Languages</h5>
-                    </div>
-                    <p className="text-xs text-muted-foreground">{founder.languages}</p>
-                  </div>
+                  <p className="text-xs text-muted-foreground">
+                    Telecom, BFSI, IT, Automotive, Energy, Consulting, Manufacturing, Pharmaceuticals
+                  </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
-                  <a
-                    href={`mailto:${founder.email}`}
-                    className="flex items-center text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    <Mail className="h-4 w-4 text-accent mr-2" />
-                    {founder.email}
-                  </a>
-                  <a
-                    href={founder.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    <Linkedin className="h-4 w-4 text-accent mr-2" />
-                    LinkedIn Profile
-                  </a>
+                <div>
+                  <div className="flex items-center mb-2">
+                    <Languages className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Languages</h5>
+                  </div>
+                  <p className="text-xs text-muted-foreground">English, Hindi, Telugu, Tamil</p>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Harini Card */}
+          <Card className="bg-gradient-card border-0 h-full">
+            <CardContent className="p-8 flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="relative mb-4">
+                  <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
+                  <img
+                    src={hariniPhoto.url}
+                    alt="Harini Papanna, Co-Founder of Xponential Leadership"
+                    className="relative w-32 h-32 rounded-full object-cover shadow-strong border-4 border-background ring-2 ring-accent/30"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-bold">Harini Papanna</h3>
+                <p className="text-accent font-medium text-sm">Co-Founder, Managing Partner & Head — Technology & Women Leadership</p>
+                <p className="text-muted-foreground text-xs mt-1">Bengaluru, India</p>
+              </div>
+
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                Harini is a seasoned Principal Architect and Senior Integration Architect with a
+                proven track record of building high-performing teams and delivering innovative
+                enterprise solutions. Her expertise spans IT strategy and architecture, application
+                modernization, API management, and AI transformation and data analytics.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-2 mb-6">
+                {["IT Strategy & Architecture", "Modernization", "API Management", "AI & Data Analytics"].map((tag) => (
+                  <span key={tag} className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="space-y-6 flex-1">
+                <div>
+                  <div className="flex items-center mb-3">
+                    <Briefcase className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
+                  </div>
+                  <CompanyChips items={hariniCompanies} />
+                </div>
+
+                <div>
+                  <div className="flex items-center mb-3">
+                    <Award className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Licenses & Certifications</h5>
+                  </div>
+                  <ul className="space-y-2">
+                    {hariniCertifications.map((cert) => (
+                      <li key={cert} className="flex items-start text-xs text-muted-foreground">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                        <span>{cert}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex items-center mb-3">
+                    <GraduationCap className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Education</h5>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="text-xs text-muted-foreground">
+                      <div className="font-medium text-foreground">Indian Institute of Management Bangalore</div>
+                      <div>Management Program for Women Entrepreneurs — 2012</div>
+                    </li>
+                    <li className="text-xs text-muted-foreground">
+                      <div className="font-medium text-foreground">Visvesvaraya Technological University</div>
+                      <div>Bachelor of Engineering, Computer Science — 2001–2005</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
+                <a
+                  href="mailto:harini@xponentiallead.com"
+                  className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                >
+                  <Mail className="h-4 w-4 text-accent mr-2" />
+                  harini@xponentiallead.com
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/harinipapanna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                >
+                  <Linkedin className="h-4 w-4 text-accent mr-2" />
+                  LinkedIn Profile
+                </a>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="mt-12 bg-gradient-hero rounded-2xl p-8 lg:p-12 shadow-soft text-center">
@@ -248,24 +292,6 @@ const About = () => {
             <div>
               <div className="font-medium mb-1">Results Focused</div>
               <div className="text-xs">Clear link to business priorities</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 max-w-4xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow-strong group aspect-video">
-            <img
-              src={workshopPhoto.url}
-              alt="Satya Kumar facilitating a leadership workshop"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-              <p className="text-accent text-xs uppercase tracking-widest mb-2">In the Room</p>
-              <h3 className="text-xl lg:text-2xl font-bold text-foreground">
-                Facilitating leaders where transformation happens
-              </h3>
             </div>
           </div>
         </div>
