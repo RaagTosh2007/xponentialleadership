@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
-import hariniPhoto from "@/assets/harini-papanna.png.asset.json";
+import hariniPhoto from "@/assets/harini-papanna.png";
 
 const About = () => {
   const highlights = [
