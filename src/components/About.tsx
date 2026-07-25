@@ -182,7 +182,7 @@ const About = () => {
                 <div className="relative mb-4">
                   <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
                   <img
-                    src={hariniPhoto.url}
+                    src={hariniPhoto}
                     alt="Harini Papanna, Co-Founder of Xponential Leadership"
                     className="relative w-32 h-32 rounded-full object-cover shadow-strong border-4 border-background ring-2 ring-accent/30"
                     loading="lazy"
