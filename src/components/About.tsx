@@ -166,6 +166,25 @@ const About = () => {
                   <p className="text-xs text-muted-foreground">English, Hindi, Telugu, Tamil</p>
                 </div>
               </div>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
+                <a
+                  href="mailto:satya@xponentiallead.com"
+                  className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                >
+                  <Mail className="h-4 w-4 text-accent mr-2" />
+                  satya@xponentiallead.com
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/satyanarayanankumar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-muted-foreground hover:text-accent transition-colors"
+                >
+                  <Linkedin className="h-4 w-4 text-accent mr-2" />
+                  LinkedIn Profile
+                </a>
+              </div>
             </CardContent>
           </Card>
 
@@ -271,15 +290,15 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="mt-12 bg-gradient-hero rounded-2xl p-8 lg:p-12 shadow-soft text-center">
-          <h3 className="text-2xl font-bold text-primary-foreground mb-4">
+        <div className="mt-12 bg-gradient-hero rounded-2xl p-6 md:p-8 lg:p-10 shadow-soft text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-primary-foreground mb-3 md:mb-4">
             Transforming Organizations Through People
           </h3>
-          <p className="text-lg text-primary-foreground/90 mb-6 max-w-3xl mx-auto">
+          <p className="text-base text-primary-foreground/90 mb-5 md:mb-6 max-w-3xl mx-auto">
             From designing talent management systems for global expansions to coaching C-suite leaders through
             role transitions, we bring practical solutions that drive lasting organizational change.
           </p>
-          <div className="grid md:grid-cols-3 gap-6 text-primary-foreground/80 text-sm">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6 text-primary-foreground/80 text-sm">
             <div>
               <div className="font-medium mb-1">Proven Scale</div>
               <div className="text-xs">130,000+ employees across 100+ countries</div>
