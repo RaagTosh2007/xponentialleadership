@@ -63,18 +63,12 @@ const About = () => {
   const CompanyChips = ({ items }: { items: { name: string; domain: string }[] }) => (
     <div className="flex flex-wrap gap-2">
       {items.map((co) => (
-        <div
+        <span
           key={co.name}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-background/40 border border-border/50"
+          className="text-xs px-3 py-1.5 rounded-md bg-background/40 border border-border/50 text-muted-foreground"
         >
-          <img
-            src={`https://logo.clearbit.com/${co.domain}`}
-            alt={`${co.name} logo`}
-            className="h-5 w-5 object-contain bg-white rounded-sm p-0.5"
-            loading="lazy"
-          />
-          <span className="text-xs text-muted-foreground">{co.name}</span>
-        </div>
+          {co.name}
+        </span>
       ))}
     </div>
   );
