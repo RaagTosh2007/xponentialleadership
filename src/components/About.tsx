@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Globe, Users, Award, GraduationCap, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
+import { Building2, Globe, Users, Award, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
 import hariniPhoto from "@/assets/harini-papanna.png";
 
 const About = () => {
@@ -214,7 +214,7 @@ const About = () => {
                 <div>
                   <div className="flex items-center mb-3">
                     <Award className="h-4 w-4 text-accent mr-2" />
-                    <h5 className="font-semibold text-accent text-sm">Licenses & Certifications</h5>
+                    <h5 className="font-semibold text-accent text-sm">Education & Certifications</h5>
                   </div>
                   <ul className="space-y-2">
                     {hariniCertifications.map((cert) => (
@@ -223,24 +223,29 @@ const About = () => {
                         <span>{cert}</span>
                       </li>
                     ))}
+                    <li className="flex items-start text-xs text-muted-foreground">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                      <span>
+                        <span className="font-medium text-foreground">Indian Institute of Management Bangalore</span>
+                        {" — Management Program for Women Entrepreneurs, 2012"}
+                      </span>
+                    </li>
+                    <li className="flex items-start text-xs text-muted-foreground">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                      <span>
+                        <span className="font-medium text-foreground">Visvesvaraya Technological University</span>
+                        {" — Bachelor of Engineering, Computer Science, 2001–2005"}
+                      </span>
+                    </li>
                   </ul>
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-3">
-                    <GraduationCap className="h-4 w-4 text-accent mr-2" />
-                    <h5 className="font-semibold text-accent text-sm">Education</h5>
+                  <div className="flex items-center mb-2">
+                    <Languages className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Languages</h5>
                   </div>
-                  <ul className="space-y-3">
-                    <li className="text-xs text-muted-foreground">
-                      <div className="font-medium text-foreground">Indian Institute of Management Bangalore</div>
-                      <div>Management Program for Women Entrepreneurs — 2012</div>
-                    </li>
-                    <li className="text-xs text-muted-foreground">
-                      <div className="font-medium text-foreground">Visvesvaraya Technological University</div>
-                      <div>Bachelor of Engineering, Computer Science — 2001–2005</div>
-                    </li>
-                  </ul>
+                  <p className="text-xs text-muted-foreground">English, Hindi, Telugu, Kannada</p>
                 </div>
               </div>
 
