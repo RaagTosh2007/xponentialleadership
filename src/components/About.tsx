@@ -104,21 +104,21 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Satya Card */}
           <Card className="bg-gradient-card border-0 h-full">
-            <CardContent className="p-8 flex flex-col h-full">
-              <div className="flex flex-col items-center text-center mb-6">
-                <div className="relative mb-4">
+            <CardContent className="p-6 flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-4">
+                <div className="relative mb-3">
                   <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
                   <img
                     src="/lovable-uploads/2f57c10c-6b93-4dd0-bb17-d8a4b8bb8050.png"
                     alt="Satyanarayana Kumar - Management Consultant & Executive Coach"
-                    className="relative w-32 h-32 rounded-full object-cover object-center shadow-strong border-4 border-background ring-2 ring-accent/30"
+                    className="relative w-28 h-28 rounded-full object-cover object-center shadow-strong border-4 border-background ring-2 ring-accent/30"
                   />
                 </div>
                 <h3 className="text-xl font-bold">Satya Kumar</h3>
                 <p className="text-accent font-medium text-sm">Founder & Head — People, Organization & Culture</p>
               </div>
 
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 A seasoned organizational development expert with over two decades of
                 experience partnering with C-suite leaders to drive performance, talent
                 development, and culture transformation across global organizations.
