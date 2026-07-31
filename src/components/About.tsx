@@ -167,7 +167,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-4 pt-4 border-t border-border/50">
                 <a
                   href="mailto:satya@xponentiallead.com"
                   className="flex items-center text-muted-foreground hover:text-accent transition-colors"
@@ -190,20 +190,19 @@ const About = () => {
 
           {/* Harini Card */}
           <Card className="bg-gradient-card border-0 h-full">
-            <CardContent className="p-8 flex flex-col h-full">
-              <div className="flex flex-col items-center text-center mb-6">
-                <div className="relative mb-4">
+            <CardContent className="p-6 flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-4">
+                <div className="relative mb-3">
                   <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
                   <img
                     src={hariniPhoto}
                     alt="Harini Papanna, Co-Founder of Xponential Leadership"
-                    className="relative w-32 h-32 rounded-full object-cover shadow-strong border-4 border-background ring-2 ring-accent/30"
+                    className="relative w-28 h-28 rounded-full object-cover shadow-strong border-4 border-background ring-2 ring-accent/30"
                     loading="lazy"
                   />
                 </div>
                 <h3 className="text-xl font-bold">Harini Papanna</h3>
                 <p className="text-accent font-medium text-sm">Co-Founder, Managing Partner & Head — Technology & Women Leadership</p>
-                <p className="text-muted-foreground text-xs mt-1">Bengaluru, India</p>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -213,7 +212,7 @@ const About = () => {
                 modernization, API management, and AI transformation and data analytics.
               </p>
 
-              <div className="flex flex-wrap justify-center gap-2 mb-6">
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {["IT Strategy & Architecture", "Modernization", "API Management", "AI & Data Analytics"].map((tag) => (
                   <span key={tag} className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
                     {tag}
