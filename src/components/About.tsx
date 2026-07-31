@@ -124,9 +124,9 @@ const About = () => {
                 development, and culture transformation across global organizations.
               </p>
 
-              <div className="space-y-6 flex-1">
+              <div className="space-y-4 flex-1">
                 <div>
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center mb-2">
                     <Briefcase className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
                   </div>
@@ -134,11 +134,11 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center mb-2">
                     <Award className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Education & Certifications</h5>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5">
                     {satyaCertifications.map((cert) => (
                       <li key={cert} className="flex items-start text-xs text-muted-foreground">
                         <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
@@ -149,7 +149,7 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-1.5">
                     <Building2 className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Industry Focus</h5>
                   </div>
@@ -159,7 +159,7 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-1.5">
                     <Languages className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Languages</h5>
                   </div>
