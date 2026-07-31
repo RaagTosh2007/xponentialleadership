@@ -114,14 +114,14 @@ const Coaching = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-2 gap-6 mb-8">
           <Card className="bg-gradient-card border-0">
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
                 <Briefcase className="h-6 w-6 text-accent mr-3" />
                 <h3 className="text-xl font-bold">Industry Experience</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {experience.map((exp, index) => (
                   <div key={index}>
                     <h4 className="font-semibold text-accent mb-1">{exp.industry}</h4>
@@ -133,12 +133,12 @@ const Coaching = () => {
           </Card>
 
           <Card className="bg-gradient-card border-0">
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
                 <Award className="h-6 w-6 text-accent mr-3" />
                 <h3 className="text-xl font-bold">Leadership Levels</h3>
               </div>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {levels.map((level, index) => (
                   <div key={index} className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-accent mr-3" />
@@ -146,22 +146,15 @@ const Coaching = () => {
                   </div>
                 ))}
               </div>
-              <div className="mt-6 pt-6 border-t border-border/50">
-                <div className="flex items-center">
-                  <Award className="h-4 w-4 text-accent mr-2" />
-                  <span className="text-sm font-semibold text-accent">PCC - International Coach Federation (ICF)</span>
-                </div>
-                <p className="text-xs text-muted-foreground mt-1">Certified Advanced Coaching Professional</p>
-              </div>
             </CardContent>
           </Card>
         </div>
 
-        <div className="bg-gradient-hero rounded-2xl p-8 lg:p-12 text-center shadow-strong">
-          <h3 className="text-2xl font-bold text-primary-foreground mb-4">
+        <div className="bg-gradient-hero rounded-2xl p-6 lg:p-8 text-center shadow-strong">
+          <h3 className="text-2xl font-bold text-primary-foreground mb-3">
             Ready to Accelerate Your Leadership Journey?
           </h3>
-          <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/80 mb-4 max-w-2xl mx-auto">
             Whether you're navigating a career transition, leading transformation, or looking to enhance your executive presence, 
             let's explore how coaching can unlock your next level of impact.
           </p>
