@@ -87,11 +87,11 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {highlights.map((highlight, index) => (
             <Card key={index} className="bg-gradient-card hover:shadow-medium transition-all duration-300 border-0">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+              <CardContent className="p-5 text-center">
+                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-3">
                   <highlight.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-semibold mb-2 text-sm leading-tight">{highlight.title}</h3>
