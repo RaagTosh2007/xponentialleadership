@@ -25,15 +25,15 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <img src={xlLogo} alt="Xponential Leadership" className="h-12 w-auto mb-4 bg-white rounded-md p-2" />
-            <p className="text-primary-foreground/80 mb-6 max-w-md">
+            <p className="text-primary-foreground/80 mb-4 max-w-md">
               Stronger Organizations. Resilient Leaders. Lasting Impact.
             </p>
-            <p className="text-primary-foreground/80 mb-6">
+            <p className="text-primary-foreground/80 mb-4">
               Partnering with leaders and teams to strengthen organizations from the inside out 
               through proven OD practices and leadership coaching.
             </p>
@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <Separator className="my-8 bg-primary-foreground/20" />
+        <Separator className="my-6 bg-primary-foreground/20" />
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-primary-foreground/80 mb-4 md:mb-0">
