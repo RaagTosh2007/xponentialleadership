@@ -267,7 +267,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-4 pt-4 border-t border-border/50">
                 <a
                   href="mailto:harini@xponentiallead.com"
                   className="flex items-center text-muted-foreground hover:text-accent transition-colors"
@@ -289,11 +289,11 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="mt-12 bg-gradient-hero rounded-2xl p-6 md:p-8 lg:p-10 shadow-soft text-center">
-          <h3 className="text-xl md:text-2xl font-bold text-primary-foreground mb-3 md:mb-4">
+        <div className="mt-8 bg-gradient-hero rounded-2xl p-5 md:p-6 lg:p-8 shadow-soft text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-primary-foreground mb-2 md:mb-3">
             Transforming Organizations Through People
           </h3>
-          <p className="text-base text-primary-foreground/90 mb-5 md:mb-6 max-w-3xl mx-auto">
+          <p className="text-base text-primary-foreground/90 mb-3 md:mb-4 max-w-3xl mx-auto">
             From designing talent management systems for global expansions to coaching C-suite leaders through
             role transitions, we bring practical solutions that drive lasting organizational change.
           </p>
