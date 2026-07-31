@@ -74,9 +74,9 @@ const About = () => {
   );
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-secondary/30">
+    <section id="about" className="py-12 lg:py-16 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Meet the <span className="gradient-text">Founders</span>
           </h2>
