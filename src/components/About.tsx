@@ -74,9 +74,9 @@ const About = () => {
   );
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-secondary/30">
+    <section id="about" className="py-12 lg:py-16 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Meet the <span className="gradient-text">Founders</span>
           </h2>
@@ -87,11 +87,11 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {highlights.map((highlight, index) => (
             <Card key={index} className="bg-gradient-card hover:shadow-medium transition-all duration-300 border-0">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+              <CardContent className="p-5 text-center">
+                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-3">
                   <highlight.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-semibold mb-2 text-sm leading-tight">{highlight.title}</h3>
@@ -104,29 +104,29 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Satya Card */}
           <Card className="bg-gradient-card border-0 h-full">
-            <CardContent className="p-8 flex flex-col h-full">
-              <div className="flex flex-col items-center text-center mb-6">
-                <div className="relative mb-4">
+            <CardContent className="p-6 flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-4">
+                <div className="relative mb-3">
                   <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
                   <img
                     src="/lovable-uploads/2f57c10c-6b93-4dd0-bb17-d8a4b8bb8050.png"
                     alt="Satyanarayana Kumar - Management Consultant & Executive Coach"
-                    className="relative w-32 h-32 rounded-full object-cover object-center shadow-strong border-4 border-background ring-2 ring-accent/30"
+                    className="relative w-28 h-28 rounded-full object-cover object-center shadow-strong border-4 border-background ring-2 ring-accent/30"
                   />
                 </div>
                 <h3 className="text-xl font-bold">Satya Kumar</h3>
                 <p className="text-accent font-medium text-sm">Founder & Head — People, Organization & Culture</p>
               </div>
 
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 A seasoned organizational development expert with over two decades of
                 experience partnering with C-suite leaders to drive performance, talent
                 development, and culture transformation across global organizations.
               </p>
 
-              <div className="space-y-6 flex-1">
+              <div className="space-y-4 flex-1">
                 <div>
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center mb-2">
                     <Briefcase className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
                   </div>
@@ -134,11 +134,11 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center mb-2">
                     <Award className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Education & Certifications</h5>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5">
                     {satyaCertifications.map((cert) => (
                       <li key={cert} className="flex items-start text-xs text-muted-foreground">
                         <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
@@ -149,7 +149,7 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-1.5">
                     <Building2 className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Industry Focus</h5>
                   </div>
@@ -159,7 +159,7 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-1.5">
                     <Languages className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Languages</h5>
                   </div>
@@ -167,7 +167,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-4 pt-4 border-t border-border/50">
                 <a
                   href="mailto:satya@xponentiallead.com"
                   className="flex items-center text-muted-foreground hover:text-accent transition-colors"
@@ -190,20 +190,19 @@ const About = () => {
 
           {/* Harini Card */}
           <Card className="bg-gradient-card border-0 h-full">
-            <CardContent className="p-8 flex flex-col h-full">
-              <div className="flex flex-col items-center text-center mb-6">
-                <div className="relative mb-4">
+            <CardContent className="p-6 flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-4">
+                <div className="relative mb-3">
                   <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-20 scale-110"></div>
                   <img
                     src={hariniPhoto}
                     alt="Harini Papanna, Co-Founder of Xponential Leadership"
-                    className="relative w-32 h-32 rounded-full object-cover shadow-strong border-4 border-background ring-2 ring-accent/30"
+                    className="relative w-28 h-28 rounded-full object-cover shadow-strong border-4 border-background ring-2 ring-accent/30"
                     loading="lazy"
                   />
                 </div>
                 <h3 className="text-xl font-bold">Harini Papanna</h3>
                 <p className="text-accent font-medium text-sm">Co-Founder, Managing Partner & Head — Technology & Women Leadership</p>
-                <p className="text-muted-foreground text-xs mt-1">Bengaluru, India</p>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -213,7 +212,7 @@ const About = () => {
                 modernization, API management, and AI transformation and data analytics.
               </p>
 
-              <div className="flex flex-wrap justify-center gap-2 mb-6">
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {["IT Strategy & Architecture", "Modernization", "API Management", "AI & Data Analytics"].map((tag) => (
                   <span key={tag} className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
                     {tag}
@@ -221,9 +220,9 @@ const About = () => {
                 ))}
               </div>
 
-              <div className="space-y-6 flex-1">
+              <div className="space-y-4 flex-1">
                 <div>
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center mb-2">
                     <Briefcase className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
                   </div>
@@ -231,11 +230,11 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center mb-2">
                     <Award className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Education & Certifications</h5>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5">
                     {hariniCertifications.map((cert) => (
                       <li key={cert} className="flex items-start text-xs text-muted-foreground">
                         <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
@@ -260,7 +259,7 @@ const About = () => {
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-1.5">
                     <Languages className="h-4 w-4 text-accent mr-2" />
                     <h5 className="font-semibold text-accent text-sm">Languages</h5>
                   </div>
@@ -268,7 +267,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-6 pt-6 border-t border-border/50">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm mt-4 pt-4 border-t border-border/50">
                 <a
                   href="mailto:harini@xponentiallead.com"
                   className="flex items-center text-muted-foreground hover:text-accent transition-colors"
@@ -290,11 +289,11 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="mt-12 bg-gradient-hero rounded-2xl p-6 md:p-8 lg:p-10 shadow-soft text-center">
-          <h3 className="text-xl md:text-2xl font-bold text-primary-foreground mb-3 md:mb-4">
+        <div className="mt-8 bg-gradient-hero rounded-2xl p-5 md:p-6 lg:p-8 shadow-soft text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-primary-foreground mb-2 md:mb-3">
             Transforming Organizations Through People
           </h3>
-          <p className="text-base text-primary-foreground/90 mb-5 md:mb-6 max-w-3xl mx-auto">
+          <p className="text-base text-primary-foreground/90 mb-3 md:mb-4 max-w-3xl mx-auto">
             From designing talent management systems for global expansions to coaching C-suite leaders through
             role transitions, we bring practical solutions that drive lasting organizational change.
           </p>

@@ -37,14 +37,14 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-16 lg:py-24">
+    <section id="contact" className="py-12 lg:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="max-w-2xl mx-auto">
-          <div className="space-y-8">
-            <div className="bg-gradient-card rounded-2xl p-8 shadow-soft">
-              <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
-              <div className="space-y-6">
+          <div className="space-y-6">
+            <div className="bg-gradient-card rounded-2xl p-6 shadow-soft">
+              <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+              <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
@@ -80,19 +80,19 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
               <div className="rounded-xl overflow-hidden shadow-soft">
                 <img 
                   src={officeView} 
                   alt="Office interior workspace"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 object-cover"
                 />
               </div>
               <div className="rounded-xl overflow-hidden shadow-soft">
                 <img 
                   src={officeEntrance} 
                   alt="Office entrance with garden"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 object-cover"
                 />
               </div>
             </div>

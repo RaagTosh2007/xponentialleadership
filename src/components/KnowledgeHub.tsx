@@ -1,9 +1,9 @@
 const KnowledgeHub = () => {
   return (
-    <section id="knowledge-hub" className="py-16 lg:py-24 bg-muted/30">
+    <section id="knowledge-hub" className="py-12 lg:py-16 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Knowledge <span className="gradient-text">Hub</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
