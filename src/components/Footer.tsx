@@ -5,22 +5,23 @@ import xlLogo from "@/assets/xl-logo.png";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Resources", href: "#resources" },
-    { name: "Contact", href: "#contact" }
+    { name: "What We Do", href: "#services" },
+    { name: "Why Us", href: "#why-us" },
+    { name: "Clients", href: "#clients" },
+    { name: "Founders", href: "#about" },
+    { name: "Knowledge Hub", href: "#knowledge-hub" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const services = [
-    "Organization Development Strategy",
-    "Diagnostics & Assessments", 
-    "Change & Intervention Design",
-    "Leadership Coaching",
-    "Learning & Culture Enablement"
+    "High Performance Leadership",
+    "Top Talent Development",
+    "Capabilities & Culture",
+    "Executive Coaching",
   ];
 
   return (
@@ -31,29 +32,35 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <img src={xlLogo} alt="Xponential Leadership" className="h-12 w-auto mb-4 bg-white rounded-md p-2" />
             <p className="text-primary-foreground/80 mb-4 max-w-md">
-              Stronger Organizations. Resilient Leaders. Lasting Impact.
+              Bold, boundaryless leadership development — grounded in India, connected to the world.
             </p>
             <p className="text-primary-foreground/80 mb-4">
-              Partnering with leaders and teams to strengthen organizations from the inside out 
-              through proven OD practices and leadership coaching.
+              Your trusted partner in building sustainable high-performance leadership teams.
             </p>
-            
+
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:satya@xponentiallead.com" className="hover:text-accent transition-colors">
-                  satya@xponentiallead.com
-                </a>
+                <span className="text-sm">
+                  <a href="mailto:satya@xponentiallead.com" className="hover:text-accent transition-colors">
+                    satya@xponentiallead.com
+                  </a>
+                  {" | "}
+                  <a href="mailto:harini@xponentiallead.com" className="hover:text-accent transition-colors">
+                    harini@xponentiallead.com
+                  </a>
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span>+91 9606110860 | +44 7443731001</span>
+                <span>+91 96061 10860 (India) | +44 7443 731001 (UK)</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
                 <span className="text-sm">
-                  109/195/4, Chikkathayappa Reddy Road, Chelekere, 
-                  Kalyan Nagar PO, Bengaluru - 560 043
+                  Offices — Greater London, UK • Bengaluru, India
+                  <br />
+                  Development Centres — Bengaluru • Coimbatore
                 </span>
               </div>
             </div>
@@ -65,10 +72,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href}
-                    className="text-primary-foreground/80 hover:text-accent transition-colors"
-                  >
+                  <a href={link.href} className="text-primary-foreground/80 hover:text-accent transition-colors">
                     {link.name}
                   </a>
                 </li>
@@ -78,13 +82,11 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">What We Do</h4>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service}>
-                  <span className="text-primary-foreground/80 text-sm">
-                    {service}
-                  </span>
+                  <span className="text-primary-foreground/80 text-sm">{service}</span>
                 </li>
               ))}
             </ul>
@@ -95,11 +97,11 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-primary-foreground/80 mb-4 md:mb-0">
-            © 2024 Xponential Leadership. All rights reserved.
+            © 2026 Xponential Leadership. All rights reserved.
           </div>
-          
+
           <div className="flex items-center space-x-4">
-            <a 
+            <a
               href="https://www.linkedin.com/in/satyanarayanankumar"
               target="_blank"
               rel="noopener noreferrer"
@@ -107,7 +109,7 @@ const Footer = () => {
             >
               <Linkedin className="h-5 w-5" />
             </a>
-            
+
             <Button
               variant="ghost"
               size="sm"
