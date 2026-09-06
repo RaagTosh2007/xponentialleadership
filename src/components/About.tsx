@@ -46,11 +46,27 @@ const About = () => {
   ];
 
   const satyaCertifications = [
-    "MBA - HR & Marketing, IPE",
-    "Level 5 - CIPD, UK",
-    "PCC - International Coach Federation (ICF)",
-    "Certified Advanced Coaching Professional (CACP)",
-    "Korn Ferry 360 Profilor, MBTI, FIRO-B",
+    "ICF PCC & Hogan Certified Coach",
+    "DDI Certified Leadership Facilitator",
+    "PDI 360 · MBTI · FIRO-B",
+    "Independent Director — IICA",
+    "CII Business Excellence Model Assessor",
+    "B.Sc. Life Sciences",
+    "MBA — HRM & Marketing, IPE",
+    "CIPD UK, Level 5",
+  ];
+
+  const satyaServices = [
+    "Interim Chief Learning Officer",
+    "Chief Talent & Culture Officer",
+    "Independent Director",
+    "Executive coaching & leadership facilitation",
+  ];
+
+  const hariniServices = [
+    "Technology & digital transformation advisory",
+    "Enterprise architecture & modernization",
+    "Women leadership programmes",
   ];
 
   const hariniCertifications = [
@@ -115,7 +131,7 @@ const About = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold">Satya Kumar</h3>
-                <p className="text-accent font-medium text-sm">Founder & Head — People, Organization & Culture</p>
+                <p className="text-accent font-medium text-sm">Founder & Head, Leadership & HR Practice</p>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -131,6 +147,21 @@ const About = () => {
                     <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
                   </div>
                   <CompanyChips items={satyaCompanies} />
+                </div>
+
+                <div>
+                  <div className="flex items-center mb-2">
+                    <Briefcase className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Engage For</h5>
+                  </div>
+                  <ul className="space-y-1.5">
+                    {satyaServices.map((item) => (
+                      <li key={item} className="flex items-start text-xs text-muted-foreground">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 <div>
@@ -164,6 +195,9 @@ const About = () => {
                     <h5 className="font-semibold text-accent text-sm">Languages</h5>
                   </div>
                   <p className="text-xs text-muted-foreground">English, Hindi, Telugu, Tamil</p>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    <span className="font-medium text-foreground">Beyond work:</span> avid reader, traveller and mentor to first-time leaders.
+                  </p>
                 </div>
               </div>
 
@@ -202,7 +236,7 @@ const About = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold">Harini Papanna</h3>
-                <p className="text-accent font-medium text-sm">Co-Founder, Managing Partner & Head — Technology & Women Leadership</p>
+                <p className="text-accent font-medium text-sm">Managing Partner & Co-Founder</p>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -227,6 +261,21 @@ const About = () => {
                     <h5 className="font-semibold text-accent text-sm">Corporate Experience</h5>
                   </div>
                   <CompanyChips items={hariniCompanies} />
+                </div>
+
+                <div>
+                  <div className="flex items-center mb-2">
+                    <Briefcase className="h-4 w-4 text-accent mr-2" />
+                    <h5 className="font-semibold text-accent text-sm">Engage For</h5>
+                  </div>
+                  <ul className="space-y-1.5">
+                    {hariniServices.map((item) => (
+                      <li key={item} className="flex items-start text-xs text-muted-foreground">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 <div>
@@ -264,6 +313,9 @@ const About = () => {
                     <h5 className="font-semibold text-accent text-sm">Languages</h5>
                   </div>
                   <p className="text-xs text-muted-foreground">English, Hindi, Telugu, Kannada</p>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    <span className="font-medium text-foreground">Beyond work:</span> champions women in technology and community mentoring.
+                  </p>
                 </div>
               </div>
 
