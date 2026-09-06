@@ -8,10 +8,13 @@ const Header = () => {
 
   const navigation = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
+    { name: "What We Do", href: "#services" },
+    { name: "Why Us", href: "#why-us" },
+    { name: "Clients", href: "#clients" },
+    { name: "Founders", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
+
 
   return (
     <header className="fixed top-0 w-full z-50 glass-effect">
