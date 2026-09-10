@@ -2,12 +2,11 @@ const keyClients = [
   "CreditAccess Grameen",
   "Swiggy",
   "Ramco Systems",
-  "MiQ",
   "HCLTech",
   "Booking Holdings",
-  "Adobe",
   "Avanti Feeds",
   "Agratas (Tata)",
+  "Tube Investments India",
 ];
 
 const otherOrganisations = [
@@ -31,6 +30,11 @@ const otherOrganisations = [
   "Snackstreet",
   "Trafasa",
   "HP",
+  "MiQ",
+  "Adobe",
+  "HSBC UK",
+  "Vodafone UK",
+  "Swiss RE UK",
 ];
 
 const Clients = () => {
