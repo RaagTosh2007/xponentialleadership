@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Linkedin, ArrowUp } from "lucide-react";
-import xlLogoAsset from "@/assets/xl-logo-v2.png.asset.json";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,7 +21,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid md:grid-cols-[1fr_auto] gap-8 items-start">
           <div>
-            <img src={xlLogoAsset.url} alt="Xponential Leadership" className="h-16 w-auto max-w-full mb-4 bg-primary-foreground rounded-md p-2" />
+            <img src="/xponential-leadership-logo.webp" alt="Xponential Leadership" className="h-16 w-auto max-w-full mb-4 bg-primary-foreground rounded-md p-2" />
             <p className="text-primary-foreground/80 max-w-md">
               Bold, boundaryless leadership development — grounded in India, connected to the world.
             </p>
