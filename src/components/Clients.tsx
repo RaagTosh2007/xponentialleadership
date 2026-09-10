@@ -30,6 +30,11 @@ const otherOrganisations = [
   "Snackstreet",
   "Trafasa",
   "HP",
+  "MiQ",
+  "Adobe",
+  "HSBC UK",
+  "Vodafone UK",
+  "Swiss RE UK",
 ];
 
 const Clients = () => {
