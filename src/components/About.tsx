@@ -1,31 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Globe, Users, Award, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
+import { Building2, Award, Languages, Mail, Linkedin, Briefcase } from "lucide-react";
 import hariniPhoto from "@/assets/harini-papanna.png";
 
 const About = () => {
-  const highlights = [
-    {
-      icon: Award,
-      title: "23+ Years Experience",
-      description: "Leadership positions in Indian and multinational organizations"
-    },
-    {
-      icon: Building2,
-      title: "Corporate Leadership",
-      description: "Partner to C-suite on performance, talent, and culture matters"
-    },
-    {
-      icon: Globe,
-      title: "Global Experience",
-      description: "Worked across India, UK, USA, EMEA, and APAC regions"
-    },
-    {
-      icon: Users,
-      title: "Scale Impact",
-      description: "Delivered solutions for 130,000+ employees across 100+ countries"
-    }
-  ];
-
   const satyaCompanies = [
     { name: "Xponential Leadership", domain: "xponentiallead.com" },
     { name: "Tatas", domain: "tata.com" },
@@ -101,20 +78,6 @@ const About = () => {
             decades of organizational development, coaching, and technology transformation
             experience.
           </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {highlights.map((highlight, index) => (
-            <Card key={index} className="bg-gradient-card hover:shadow-medium transition-all duration-300 border-0">
-              <CardContent className="p-5 text-center">
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <highlight.icon className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <h3 className="font-semibold mb-2 text-sm leading-tight">{highlight.title}</h3>
-                <p className="text-sm text-muted-foreground">{highlight.description}</p>
-              </CardContent>
-            </Card>
-          ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">

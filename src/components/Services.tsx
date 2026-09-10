@@ -39,11 +39,6 @@ const Services = () => {
           items: ["Acceleration coaching", "Mentoring"],
         },
       ],
-      testimonial: {
-        quote:
-          "A great development consultant to work with. Absolutely thorough in his analysis of the business need and quite precise in pinning down specific challenges learners faced and potential roadblocks.",
-        author: "AVP — Organization Development, GCC of a German Bank",
-      },
     },
     {
       icon: Layers,
