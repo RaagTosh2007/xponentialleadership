@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import xlLogo from "@/assets/xl-logo.png";
+import xlLogoAsset from "@/assets/xl-logo-v2.png.asset.json";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +22,9 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="flex-shrink-0 flex items-center">
             <img 
-              src={xlLogo} 
+              src={xlLogoAsset.url} 
               alt="Xponential Leadership" 
-              className="h-8 md:h-9 w-auto max-w-[180px] object-contain" 
+              className="h-10 md:h-11 w-auto max-w-[220px] object-contain" 
             />
           </a>
           

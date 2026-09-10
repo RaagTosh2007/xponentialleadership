@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Globe, Building2 } from "lucide-react";
 
 const Contact = () => {
@@ -85,16 +84,6 @@ const Contact = () => {
               ))}
             </div>
           </div>
-
-          <Card className="bg-gradient-card border-0 shadow-soft mt-6">
-            <CardContent className="p-6 text-center">
-              <Globe className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">Dual operational base</h3>
-              <p className="text-sm text-muted-foreground">
-                Working across the UK and India — with global delivery, and no visa sponsorship needed.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

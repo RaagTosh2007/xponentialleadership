@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Linkedin, ArrowUp } from "lucide-react";
-import xlLogo from "@/assets/xl-logo.png";
+import { Linkedin, ArrowUp } from "lucide-react";
+import xlLogoAsset from "@/assets/xl-logo-v2.png.asset.json";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -17,76 +17,25 @@ const Footer = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  const services = [
-    "High Performance Leadership",
-    "Top Talent Development",
-    "Capabilities & Culture",
-    "Executive Coaching",
-  ];
-
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-2">
-            <img src={xlLogo} alt="Xponential Leadership" className="h-12 w-auto mb-4 bg-white rounded-md p-2" />
-            <p className="text-primary-foreground/80 mb-4 max-w-md">
+        <div className="grid md:grid-cols-[1fr_auto] gap-8 items-start">
+          <div>
+            <img src={xlLogoAsset.url} alt="Xponential Leadership" className="h-16 w-auto max-w-full mb-4 bg-primary-foreground rounded-md p-2" />
+            <p className="text-primary-foreground/80 max-w-md">
               Bold, boundaryless leadership development — grounded in India, connected to the world.
             </p>
-            <p className="text-primary-foreground/80 mb-4">
-              Your trusted partner in building sustainable high-performance leadership teams.
-            </p>
-
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4" />
-                <span className="text-sm">
-                  <a href="mailto:satya@xponentiallead.com" className="hover:text-accent transition-colors">
-                    satya@xponentiallead.com
-                  </a>
-                  {" | "}
-                  <a href="mailto:harini@xponentiallead.com" className="hover:text-accent transition-colors">
-                    harini@xponentiallead.com
-                  </a>
-                </span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4" />
-                <span>+91 96061 10860 (India) | +44 7443 731001 (UK)</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span className="text-sm">
-                  Offices — Greater London, UK • Bengaluru, India
-                  <br />
-                  Development Centres — Bengaluru • Coimbatore
-                </span>
-              </div>
-            </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a href={link.href} className="text-primary-foreground/80 hover:text-accent transition-colors">
                     {link.name}
                   </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold mb-4">What We Do</h4>
-            <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-primary-foreground/80 text-sm">{service}</span>
                 </li>
               ))}
             </ul>
