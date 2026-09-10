@@ -12,7 +12,7 @@ const Services = () => {
       groups: [
         { heading: "Springboards", items: ["Vision, mission and team charters"] },
         { heading: "Crucible", items: ["Identity & value clarification", "Habit formation"] },
-        { heading: "Unblocker — Coaching for Impact", items: ["Hogan, FIRO-B, TKI"] },
+        { heading: "Unblocker - Coaching for Impact", items: ["Hogan, FIRO-B, TKI"] },
         { heading: "Embedding change at scale", items: ["Process design", "Rituals & practices"] },
         { heading: "Mentoring ecosystem", items: [] },
       ],
@@ -113,7 +113,7 @@ const Services = () => {
                         <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
                           "{pillar.testimonial.quote}"
                           <div className="mt-2 text-xs font-semibold text-accent">
-                            — {pillar.testimonial.author}
+                            - {pillar.testimonial.author}
                           </div>
                         </AccordionContent>
                       </AccordionItem>

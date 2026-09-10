@@ -23,7 +23,7 @@ const Footer = () => {
           <div>
             <img src="/xponential-leadership-logo.webp" alt="Xponential Leadership" className="h-16 w-auto max-w-full mb-4 bg-primary-foreground rounded-md p-2" />
             <p className="text-primary-foreground/80 max-w-md">
-              Bold, boundaryless leadership development — grounded in India, connected to the world.
+              Bold, boundaryless leadership development - grounded in India, connected to the world.
             </p>
           </div>
 

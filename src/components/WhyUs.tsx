@@ -13,7 +13,7 @@ const pillars = [
     icon: Globe,
     title: "Global exposure & dual operational base",
     description:
-      "Authorised to live and work in both India and the UK — genuine cross-border delivery, without the need for visa or sponsorship.",
+      "Authorised to live and work in both India and the UK - genuine cross-border delivery, without the need for visa or sponsorship.",
   },
   {
     icon: Medal,
@@ -25,7 +25,7 @@ const pillars = [
     icon: Layers,
     title: "Expert leaders with a global partner network",
     description:
-      "High Performance Leadership, Top Talent Development, Capabilities & Culture — built to move with a client from strategy to shop floor.",
+      "High Performance Leadership, Top Talent Development, Capabilities & Culture - built to move with a client from strategy to shop floor.",
   },
   {
     icon: Users,

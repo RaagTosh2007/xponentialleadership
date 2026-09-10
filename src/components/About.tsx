@@ -26,10 +26,10 @@ const About = () => {
     "ICF PCC & Hogan Certified Coach",
     "DDI Certified Leadership Facilitator",
     "PDI 360 · MBTI · FIRO-B",
-    "Independent Director — IICA",
+    "Independent Director - IICA",
     "CII Business Excellence Model Assessor",
     "B.Sc. Life Sciences",
-    "MBA — HRM & Marketing, IPE",
+    "MBA - HRM & Marketing, IPE",
     "CIPD UK, Level 5",
   ];
 
@@ -74,7 +74,7 @@ const About = () => {
             Meet the <span className="gradient-text">Founders</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Partners driving Xponential Leadership across India and the UK — blending
+            Partners driving Xponential Leadership across India and the UK - blending
             decades of organizational development, coaching, and technology transformation
             experience.
           </p>
@@ -257,14 +257,14 @@ const About = () => {
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
                       <span>
                         <span className="font-medium text-foreground">Indian Institute of Management Bangalore</span>
-                        {" — Management Program for Women Entrepreneurs, 2012"}
+                        {" - Management Program for Women Entrepreneurs, 2012"}
                       </span>
                     </li>
                     <li className="flex items-start text-xs text-muted-foreground">
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
                       <span>
                         <span className="font-medium text-foreground">Visvesvaraya Technological University</span>
-                        {" — Bachelor of Engineering, Computer Science, 2001–2005"}
+                        {" - Bachelor of Engineering, Computer Science, 2001–2005"}
                       </span>
                     </li>
                   </ul>
