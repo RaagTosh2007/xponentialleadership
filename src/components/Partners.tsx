@@ -34,12 +34,12 @@ const Partners = () => {
             <CardContent className="p-6">
               <Quote className="h-6 w-6 text-accent mb-3" />
               <p className="text-sm text-muted-foreground leading-relaxed italic">
-                "A great development consultant to work with — absolutely thorough in their analysis
+                "A great development consultant to work with - absolutely thorough in their analysis
                 of the business need and precise in pinning down specific challenges and potential
                 roadblocks."
               </p>
               <p className="mt-3 text-xs font-semibold text-accent">
-                — AVP, Organization Development, GCC of a German Bank
+                - AVP, Organization Development, GCC of a German Bank
               </p>
             </CardContent>
           </Card>

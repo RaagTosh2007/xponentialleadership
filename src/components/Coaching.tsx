@@ -103,7 +103,7 @@ const Coaching = () => {
                       <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
                         "{area.testimonial.quote}"
                         <div className="mt-2 text-xs font-semibold text-accent">
-                          — {area.testimonial.author}
+                          - {area.testimonial.author}
                         </div>
                       </AccordionContent>
                     </AccordionItem>
