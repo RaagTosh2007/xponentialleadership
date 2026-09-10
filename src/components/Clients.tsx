@@ -2,12 +2,11 @@ const keyClients = [
   "CreditAccess Grameen",
   "Swiggy",
   "Ramco Systems",
-  "MiQ",
   "HCLTech",
   "Booking Holdings",
-  "Adobe",
   "Avanti Feeds",
   "Agratas (Tata)",
+  "Tube Investments India",
 ];
 
 const otherOrganisations = [
