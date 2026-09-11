@@ -90,12 +90,11 @@ const Coaching = () => {
                   <area.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <CardTitle className="text-xl mb-2">{area.title}</CardTitle>
-                <p className="text-muted-foreground">{area.description}</p>
+                <p className="text-muted-foreground text-sm">{area.description}</p>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">{area.details}</p>
                 {area.testimonial && (
-                  <Accordion type="single" collapsible className="border-t pt-4 mt-4">
+                  <Accordion type="single" collapsible className="border-t pt-4">
                     <AccordionItem value="testimonial" className="border-0">
                       <AccordionTrigger className="text-sm font-semibold hover:no-underline">
                         Client Testimonial
