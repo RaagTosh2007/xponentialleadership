@@ -150,15 +150,6 @@ const Coaching = () => {
           </Card>
         </div>
 
-        <div className="bg-gradient-hero rounded-2xl p-6 lg:p-8 text-center shadow-strong">
-          <h3 className="text-2xl font-bold text-primary-foreground mb-3">
-            Ready to Accelerate Your Leadership Journey?
-          </h3>
-          <p className="text-primary-foreground/80 mb-4 max-w-2xl mx-auto">
-            Whether you're navigating a career transition, leading transformation, or looking to enhance your executive presence, 
-            let's explore how coaching can unlock your next level of impact.
-          </p>
-        </div>
       </div>
     </section>
   );

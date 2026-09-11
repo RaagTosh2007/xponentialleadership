@@ -44,7 +44,7 @@ const WhyUs = () => {
             Why <span className="gradient-text">Xponential Leadership</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Your trusted partner in building sustainable high-performance leadership teams.
+            Decades of in-house and consulting depth, delivered across India and the UK.
           </p>
         </div>
 
