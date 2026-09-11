@@ -23,7 +23,7 @@ const Header = () => {
             <img 
               src="/xponential-leadership-logo.webp" 
               alt="Xponential Leadership" 
-              className="h-14 md:h-16 w-auto max-w-[320px] object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105" 
+              className="h-20 md:h-24 w-auto max-w-[420px] object-contain bg-primary-foreground rounded-lg px-3 py-1.5 shadow-soft transition-transform duration-300 group-hover:scale-105" 
             />
           </a>
           
