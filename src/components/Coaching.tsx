@@ -17,25 +17,21 @@ const Coaching = () => {
       icon: Target,
       title: "Career & Business Coaching",
       description: "Strategic guidance for professional growth and business development",
-      details: "Navigate career transitions, develop leadership capabilities, and achieve business objectives"
     },
     {
       icon: TrendingUp,
       title: "Leadership Transformation",
       description: "Developing leaders who inspire and deliver results",
-      details: "Build executive presence, enhance decision-making, and drive organizational change"
     },
     {
       icon: Users,
       title: "Women Leaders Coaching",
       description: "Specialized support for women in leadership roles",
-      details: "Break through barriers, build confidence, and create inclusive leadership styles"
     },
     {
       icon: Briefcase,
       title: "Breakthrough Coaching",
       description: "Overcome limiting beliefs and unlock potential",
-      details: "Transform mindsets, develop resilience, and accelerate personal and professional growth",
       testimonial: {
         quote: "High impact coach to HR leaders who are overworked but less impactful, and want to rediscover joy and be more impactful.",
         author: "Chief Diversity & Talent Officer, Fortune 500 BFSI organization"
@@ -90,12 +86,11 @@ const Coaching = () => {
                   <area.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <CardTitle className="text-xl mb-2">{area.title}</CardTitle>
-                <p className="text-muted-foreground">{area.description}</p>
+                <p className="text-muted-foreground text-sm">{area.description}</p>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">{area.details}</p>
                 {area.testimonial && (
-                  <Accordion type="single" collapsible className="border-t pt-4 mt-4">
+                  <Accordion type="single" collapsible className="border-t pt-4">
                     <AccordionItem value="testimonial" className="border-0">
                       <AccordionTrigger className="text-sm font-semibold hover:no-underline">
                         Client Testimonial
@@ -150,15 +145,6 @@ const Coaching = () => {
           </Card>
         </div>
 
-        <div className="bg-gradient-hero rounded-2xl p-6 lg:p-8 text-center shadow-strong">
-          <h3 className="text-2xl font-bold text-primary-foreground mb-3">
-            Ready to Accelerate Your Leadership Journey?
-          </h3>
-          <p className="text-primary-foreground/80 mb-4 max-w-2xl mx-auto">
-            Whether you're navigating a career transition, leading transformation, or looking to enhance your executive presence, 
-            let's explore how coaching can unlock your next level of impact.
-          </p>
-        </div>
       </div>
     </section>
   );

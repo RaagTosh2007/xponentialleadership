@@ -4,13 +4,13 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      label: "Email",
+      label: "Email Satya",
       value: "satya@xponentiallead.com",
       href: "mailto:satya@xponentiallead.com",
     },
     {
       icon: Mail,
-      label: "Email",
+      label: "Email Harini",
       value: "harini@xponentiallead.com",
       href: "mailto:harini@xponentiallead.com",
     },
