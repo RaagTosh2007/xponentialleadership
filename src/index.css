@@ -141,6 +141,11 @@ All colors MUST be HSL.
     background-clip: text;
   }
 
+  /* Logo brand accent - the red/orange arrow colour from the emblem */
+  .logo-accent {
+    color: hsl(8 81% 49%);
+  }
+
   .glass-effect {
     backdrop-filter: blur(10px);
     background: hsl(var(--background) / 0.8);
