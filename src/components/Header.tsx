@@ -18,12 +18,12 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 glass-effect">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 md:h-24">
+        <div className="flex justify-between items-center h-24 md:h-28">
           <a href="#home" className="flex-shrink-0 flex items-center group">
             <img 
               src="/xponential-leadership-logo.webp" 
               alt="Xponential Leadership" 
-              className="h-14 md:h-16 w-auto max-w-[320px] object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105" 
+              className="h-20 md:h-24 w-auto max-w-[420px] object-contain bg-primary-foreground rounded-lg px-3 py-1.5 shadow-soft transition-transform duration-300 group-hover:scale-105" 
             />
           </a>
           
@@ -34,7 +34,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                  className="font-medium text-foreground hover:text-accent transition-colors duration-200"
                 >
                   {item.name}
                 </a>
