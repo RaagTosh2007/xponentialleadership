@@ -17,25 +17,21 @@ const Coaching = () => {
       icon: Target,
       title: "Career & Business Coaching",
       description: "Strategic guidance for professional growth and business development",
-      details: "Navigate career transitions, develop leadership capabilities, and achieve business objectives"
     },
     {
       icon: TrendingUp,
       title: "Leadership Transformation",
       description: "Developing leaders who inspire and deliver results",
-      details: "Build executive presence, enhance decision-making, and drive organizational change"
     },
     {
       icon: Users,
       title: "Women Leaders Coaching",
       description: "Specialized support for women in leadership roles",
-      details: "Break through barriers, build confidence, and create inclusive leadership styles"
     },
     {
       icon: Briefcase,
       title: "Breakthrough Coaching",
       description: "Overcome limiting beliefs and unlock potential",
-      details: "Transform mindsets, develop resilience, and accelerate personal and professional growth",
       testimonial: {
         quote: "High impact coach to HR leaders who are overworked but less impactful, and want to rediscover joy and be more impactful.",
         author: "Chief Diversity & Talent Officer, Fortune 500 BFSI organization"
